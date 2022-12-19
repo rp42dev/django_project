@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>My Blog</title>
+{% endblock %}
+{% block content %}
+<h1>My Blog</h1>
+
+<p>Time now is <span></span></p>
+
+{% endblock %}
+
+{% block postload_js %}
+<script>
+    setInterval(function() {
+        var time = new Date()
+        document.querySelector('span').innerHTML = time.toLocaleTimeString();
+    }, 1000);
+</script>
+{% endblock %}

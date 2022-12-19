@@ -6,6 +6,12 @@ __pycache__
 db.sqlite3
 media
 
+./manage.py
+manage.py
+migrations
+local_requirements.txt
+local_settings.py
+
 # Backup files # 
 *.bak 
 
