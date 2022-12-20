@@ -1429,7 +1429,7 @@ button:not(:disabled) {
 .btn-primary {
     color: var(--light-2);
     background: linear-gradient(to right, var(--rgba-primary-5) 0, var(--rgba-primary-5) 100%),
-        url(https://grainy-gradients.vercel.app/noise.svg);
+        url('../images/noise.svg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
