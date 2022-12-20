@@ -1,30 +1,74 @@
-/* Navigation menu styles */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
 
-    --blue: #4476b7;
-    --dark: rgb(13, 19, 32);
+    /* HEX */
+    --artichoke: #406653;
+    --mauve-taupe: #64496b;
+    --rifle-green: #3e644e;
+    --black-fogra: #0A0B09;
+    --blue: #50627c;
+    --green: #4f7562;
+    --red: #6d4747;
+    --dark: var(--black-fogra);
 
     --white: #ffffff;
     --light: #f4f4f4;
     --light-2: #cccccc;
-    --gray: #999999;
-    --secondary: var(--dark);
-    --primary: var(--blue);
+    --gray: rgb(145, 143, 143);
+    --green: var(--rifle-green);
+    --secondary: var(--mauve-taupe);
+    --primary: var(--artichoke);
 
-
+    /* RGB */
+    --rgb-artichoke: rgba(64, 102, 83, 1);
+    --rgb-mauve-taupe: rgba(100, 73, 107, 1);
+    --rgb-rifle-green: rgba(62, 100, 78, 1);
+    --rgb-black-fogra: rgba(10, 11, 9, 1);
+    --rgb-green: rgba(62, 100, 78, 1);
+    --rgb-secondary: rgba(100, 73, 107, 1);
+    --rgb-primary: rgba(64, 102, 83, 1);
+    --rgb-red: rgba(156, 98, 98, 1);
+    --rgb-blue: rgba(68, 118, 183, 1);
+    --rgb-dark: rgba(10, 11, 9, 1);
     --rgb-white: rgba(255, 255, 255, 1);
     --rgb-light: rgba(244, 244, 244, 1);
     --rgb-light-2: rgba(204, 204, 204, 1);
-    --rgb-gray: rgba(153, 153, 153, 1);
+    --rgb-gray: rgba(145, 143, 143, 1);
+    --black : var(--rgb-black-fogra);
+
+    /* RGBA 50% */
+    --rgba-artichoke-5: rgba(64, 102, 83, 0.5);
+    --rgba-mauve-taupe-5: rgba(100, 73, 107, 0.5);
+    --rgba-rifle-green-5: rgba(62, 100, 78, 0.5);
+    --rgba-black-fogra-5: rgba(10, 11, 9, 0.5);
+    --rgba-green-5: rgba(62, 100, 78, 0.5);
+    --rgba-secondary-5: rgba(100, 73, 107, 0.5);
+    --rgba-primary-5: rgba(64, 102, 83, 0.5);
+    --rgba-red-5: rgba(156, 98, 98, 0.5);
+    --rgba-blue-5: rgba(68, 118, 183, 0.5);
+    --rgba-dark-5: rgba(10, 11, 9, 0.5);
+    --rgba-white-5: rgba(255, 255, 255, 0.5);
+    --rgba-light-5: rgba(244, 244, 244, 0.5);
+    --rgba-light-2-5: rgba(204, 204, 204, 0.5);
+    --rgba-gray-5: rgba(145, 143, 143, 0.5);
+
+    /* SCSS Gradient */
+    --gradient-top: linear-gradient(0deg, #406653, #64496b, #43472D, #583D4C, #4A4446, #0A0B09);
+    --gradient-right: linear-gradient(90deg, #406653, #64496b, #43472D, #583D4C, #4A4446, #0A0B09);
+    --gradient-bottom: linear-gradient(180deg, #406653, #64496b, #43472D, #583D4C, #4A4446, #0A0B09);
+    --gradient-left: linear-gradient(270deg, #406653, #64496b, #43472D, #583D4C, #4A4446, #0A0B09);
+    --gradient-top-right: linear-gradient(45deg, #406653, #64496b, #43472D, #583D4C, #4A4446, #0A0B09);
+    --gradient-bottom-right: linear-gradient(135deg, #406653, #64496b, #43472D, #583D4C, #4A4446, #0A0B09);
+    --gradient-top-left: linear-gradient(225deg, #406653, #64496b, #43472D, #583D4C, #4A4446, #0A0B09);
+    --gradient-bottom-left: linear-gradient(315deg, #406653, #64496b, #43472D, #583D4C, #4A4446, #0A0B09);
+    --gradient-radial: radial-gradient(#406653, #64496b, #43472D, #583D4C, #4A4446, #0A0B09);
 
     --border-radius: 0.25rem;
     --border-radius-small: 0.125rem;
     --border-radius-large: 0.5rem;
-
 
     --padding-container: 1rem;
     --padding-container-small: 0.5rem;
@@ -33,8 +77,6 @@
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Anton', sans-serif;
     --tertiary-font: 'Montserrat', sans-serif;
-
-
 }
 
 * {
@@ -46,6 +88,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: var(--primary-font);
+    font-size: 1rem;
+    color: var(--dark);
 }
 
 .text-primary {
@@ -110,6 +154,39 @@ body {
 
 .bg-blue {
     background-color: var(--blue);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.text-black-fogra {
+    color: var(--black-fogra);
+}
+
+.bg-black-fogra {
+    background-color: var(--black-fogra);
+}
+
+
+.text-black {
+    color: var(--black);
+}
+
+.bg-black {
+    background-color: var(--black);
 }
 
 
@@ -953,7 +1030,7 @@ h2 {
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
-    background-color: #fff;
+    background-color: #f;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
@@ -962,8 +1039,8 @@ h2 {
 
 .form-control:focus {
     color: #495057;
-    background-color: #fff;
-    border-color: #80bdff;
+    background-color: #f;
+    border-color: #80bd;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
@@ -1144,7 +1221,7 @@ h2 {
     margin-top: 0.1rem;
     font-size: 0.875rem;
     line-height: 1.5;
-    color: #fff;
+    color: #f;
     background-color: rgba(40, 167, 69, 0.9);
     border-radius: 0.25rem;
 }
@@ -1212,7 +1289,7 @@ h2 {
 
 .was-validated .custom-control-input:valid:focus~.custom-control-label::before,
 .custom-control-input.is-valid:focus~.custom-control-label::before {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    box-shadow: 0 0 0 1px #f, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
 .was-validated .custom-file-input:valid~.custom-file-label,
@@ -1351,8 +1428,8 @@ button:not(:disabled) {
 
 .btn-primary {
     color: var(--light-2);
-    background: linear-gradient(to right, rgba(74, 113, 93, 0.5) 0, rgba(74, 113, 93, 0.5) 100%),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    background: linear-gradient(to right, var(--rgba-primary-5) 0, var(--rgba-primary-5) 100%),
+        url(https://grainy-gradients.vercel.app/noise.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -1547,18 +1624,19 @@ form {
     font-size: 18.6rem;
     line-height: 1;
     margin: 0;
-    background: linear-gradient(to right, rgba(111, 108, 108, 0.5) 0, rgba(110, 109, 109, 0.5) 100%),
-        url(https://grainy-gradients.vercel.app/noise.svg);
+    background: linear-gradient(to right, var(--rgba-gray-5) 0, var(--rgba-gray-5) 100%),
+        url('../images/noise.svg');
     background-size: cover;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    opacity: 0.8;
 }
 
 .header .rp span {
     color: #4a715d;
-    background: linear-gradient(to right, rgba(74, 113, 93, 0.5) 0, rgba(74, 113, 93, 0.5) 100%),
-        url(https://grainy-gradients.vercel.app/noise.svg);
+    background: linear-gradient(to right, var(--rgba-primary-5) 0, var(--rgba-primary-5) 100%),
+        url('../images/noise.svg');
     background-size: cover;
     -webkit-background-clip: text;
     background-clip: text;
