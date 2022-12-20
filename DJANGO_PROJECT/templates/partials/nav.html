@@ -1,0 +1,20 @@
+<div class="nav-wrap">
+    <nav class="nav bg-art-nav transparent">
+        <div class="nav__logo nav__item">
+            <a class="nav__link" href="/">rp42</a>
+        </div>
+        <ul class="nav__items">
+            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+            <li class="nav__item"><a class="nav__link" href=" #services">Services</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+<script>
+    window.addEventListener('scroll', function () {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('transparent', window.scrollY < 100);
+    });
+</script>
