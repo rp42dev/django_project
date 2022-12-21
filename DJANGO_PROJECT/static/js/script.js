@@ -1,8 +1,18 @@
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var nav = document.querySelector('.nav');
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        nav.style.top = "0";
+    } else {
+        nav.style.top = "-120px";
+    }
+    prevScrollpos = currentScrollPos;
+}
 
-// Path: DJANGO_PROJECT\static\js\scripts.js
-
-// event listener for scroll event
-window.addEventListener('scroll', function () {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('transparent', window.scrollY < 100);
-});
+var animate = document.querySelectorAll('.animate');
+for (var i = 0; i < animate.length; i++) {
+    animate[i].addEventListener('animationend', function () {
+        this.classList.remove('animate');
+    });
+}

@@ -1,15 +1,19 @@
 <!-- Header rp42 cloud -->
+{% load static %}
 
-<div class="container w-100">
-    <div class="row">
-        <div class="header__content-left p col-12 col-md-6 m">
-            <h1 class="rp text-gray text-nowrap">RP<span>42</span></h1>
-            <h1 class="heading display-1 text-gray text-nowrap">Tech Landing</h1>
-            <a href="#contact" class="btn btn-primary m mx-sm">
+<div class="container w-100 home">
+    <div id="trigger3" class="row animate">
+        <div class="col-12 col-md-6 home__content">
+            <h1 class="text-nowrap anim">
+                <span class="home__content-rp42 text-clip-gray">RP</spaan><span class="text-clip-primary">42</span></h1>
+            <h2 class="anim home__heading display-1 text-gray text-nowrap">Tech Landing</h2>
+            <a href="#contact" class="anim btn btn-primary m mx-sm animate">
                 <i class="fa fa-envelope"></i>
                 Contact Us</a>
         </div>
-        <div class="header__content-right col-12 col-md-6">
+        <div class="col-12 col-md-6">
         </div>
     </div>
 </div>
+
+<script src="{% static 'js/home.js' %}"></script>

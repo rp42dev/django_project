@@ -11,6 +11,7 @@ manage.py
 migrations
 local_requirements.txt
 local_settings.py
+fontawesomefree/
 
 # Backup files # 
 *.bak 
