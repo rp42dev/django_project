@@ -1,18 +1,21 @@
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    var nav = document.querySelector('.nav');
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        nav.style.top = "0";
-    } else {
-        nav.style.top = "-120px";
-    }
-    prevScrollpos = currentScrollPos;
-}
+$(window).scroll(function () {
+    // Hide navbar on scroll down and show on scroll up
+    $(window).scrollTop() > 0 ? $('.nav').css('top', '-120px') : $('.nav').css('top', '0');
 
-var animate = document.querySelectorAll('.animate');
-for (var i = 0; i < animate.length; i++) {
-    animate[i].addEventListener('animationend', function () {
-        this.classList.remove('animate');
+    // Parallax effect
+    $('.parallax').css({
+        'background-position': 'center ' + ($(this).scrollTop() * 0.5) + 'px'
     });
-}
+});
+
+$(window).on('load', function () {
+    // Remove animation class after animation ends
+    $('.animate').on('animationend', function () {
+        $(this).removeClass('animate');
+    });
+
+    // Loader animation
+    setTimeout(function () {
+        $('.loader-wrapper').hide(200);
+    }, 2000);
+});

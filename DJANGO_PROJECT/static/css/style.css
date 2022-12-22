@@ -14,7 +14,6 @@
     --green: #4f7562;
     --red: #6d4747;
     --dark: var(--black-fogra);
-
     --white: #ffffff;
     --light: #f4f4f4;
     --light-2: #cccccc;
@@ -43,22 +42,22 @@
     --black: var(--rgb-black-fogra);
 
     /* RGBA 50% */
-    --rgba-artichoke-5: rgba(64, 102, 83, 0.5);
-    --rgba-artichoke-light-5: rgba(104, 160, 132, 0.5);
-    --rgba-mauve-taupe-5: rgba(100, 73, 107, 0.5);
-    --rgba-mauve-taupe-light-5: rgba(161, 114, 172, 0.5);
-    --rgba-rifle-green-5: rgba(62, 100, 78, 0.5);
-    --rgba-black-fogra-5: rgba(10, 11, 9, 0.5);
-    --rgba-green-5: rgba(62, 100, 78, 0.5);
-    --rgba-secondary-5: rgba(100, 73, 107, 0.5);
-    --rgba-primary-5: rgba(64, 102, 83, 0.5);
-    --rgba-red-5: rgba(156, 98, 98, 0.5);
-    --rgba-blue-5: rgba(68, 118, 183, 0.5);
-    --rgba-dark-5: rgba(10, 11, 9, 0.5);
-    --rgba-white-5: rgba(255, 255, 255, 0.5);
-    --rgba-light-5: rgba(244, 244, 244, 0.5);
-    --rgba-light-2-5: rgba(204, 204, 204, 0.5);
-    --rgba-gray-5: rgba(145, 143, 143, 0.5);
+    --rgba-artichoke-7: rgba(64, 102, 83, 0.7);
+    --rgba-artichoke-light-7: rgba(104, 160, 132, 0.7);
+    --rgba-mauve-taupe-7: rgba(100, 73, 107, 0.7);
+    --rgba-mauve-taupe-light-7: rgba(161, 114, 172, 0.7);
+    --rgba-rifle-green-7: rgba(62, 100, 78, 0.7);
+    --rgba-black-fogra-7: rgba(10, 11, 9, 0.7);
+    --rgba-green-7: rgba(62, 100, 78, 0.7);
+    --rgba-secondary-7: rgba(100, 73, 107, 0.7);
+    --rgba-primary-7: rgba(64, 102, 83, 0.7);
+    --rgba-red-7: rgba(156, 98, 98, 0.7);
+    --rgba-blue-7: rgba(68, 118, 183, 0.7);
+    --rgba-dark-7: rgba(10, 11, 9, 0.7);
+    --rgba-white-7: rgba(255, 255, 255, 0.7);
+    --rgba-light-7: rgba(244, 244, 244, 0.7);
+    --rgba-light-2-7: rgba(204, 204, 204, 0.7);
+    --rgba-gray-7: rgba(145, 143, 143, 0.7);
 
     /* SCSS Gradient */
     --gradient-top: linear-gradient(0deg, #406653, #64496b, #43472D, #583D4C, #4A4446, #0A0B09);
@@ -91,6 +90,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: both proximity;
 }
 
 body {
@@ -192,7 +192,6 @@ body {
     background-color: var(--black-fogra);
 }
 
-
 .text-black {
     color: var(--black);
 }
@@ -218,8 +217,8 @@ body {
 }
 
 .text-clip-primary {
-    background: linear-gradient(to right, var(--rgba-primary-5) 0,
-            var(--rgba-primary-5) 100%), url('../images/noise.svg');
+    background: linear-gradient(to right, var(--rgba-primary-7) 0,
+            var(--rgba-primary-7) 100%), url('../images/noise.svg');
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -229,8 +228,8 @@ body {
 }
 
 .text-clip-secondary {
-    background: linear-gradient(to right, var(--rgba-secondary-5) 0,
-            var(--rgba-secondary-5) 100%), url('../images/noise.svg');
+    background: linear-gradient(to right, var(--rgba-secondary-7) 0,
+            var(--rgba-secondary-7) 100%), url('../images/noise.svg');
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -240,8 +239,8 @@ body {
 }
 
 .text-clip-white {
-    background: linear-gradient(to right, var(--rgba-white-5) 0,
-            var(--rgba-white-5) 100%), url('../images/noise.svg');
+    background: linear-gradient(to right, var(--rgba-white-7) 0,
+            var(--rgba-white-7) 100%), url('../images/noise.svg');
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -251,8 +250,8 @@ body {
 }
 
 .text-clip-light {
-    background: linear-gradient(to right, var(--rgba-light-5) 0,
-            var(--rgba-light-5) 100%), url('../images/noise.svg');
+    background: linear-gradient(to right, var(--rgba-light-7) 0,
+            var(--rgba-light-7) 100%), url('../images/noise.svg');
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -262,8 +261,8 @@ body {
 }
 
 .text-clip-dark {
-    background: linear-gradient(to right, var(--rgba-dark-5) 0,
-            var(--rgba-dark-5) 100%), url('../images/noise.svg');
+    background: linear-gradient(to right, var(--rgba-dark-7) 0,
+            var(--rgba-dark-7) 100%), url('../images/noise.svg');
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -273,8 +272,8 @@ body {
 }
 
 .text-clip-gray {
-    background: linear-gradient(to right, var(--rgba-gray-5) 0,
-            var(--rgba-gray-5) 100%), url('../images/noise.svg');
+    background: linear-gradient(to right, var(--rgba-gray-7) 0,
+            var(--rgba-gray-7) 100%), url('../images/noise.svg');
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -284,8 +283,8 @@ body {
 }
 
 .text-clip-light-2 {
-    background: linear-gradient(to right, var(--rgba-light-2-5) 0,
-            var(--rgba-light-2-5) 100%), url('../images/noise.svg');
+    background: linear-gradient(to right, var(--rgba-light-2-7) 0,
+            var(--rgba-light-2-7) 100%), url('../images/noise.svg');
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -295,8 +294,8 @@ body {
 }
 
 .text-clip-blue {
-    background: linear-gradient(to right, var(--rgba-blue-5) 0,
-            var(--rgba-blue-5) 100%), url('../images/noise.svg');
+    background: linear-gradient(to right, var(--rgba-blue-7) 0,
+            var(--rgba-blue-7) 100%), url('../images/noise.svg');
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -306,8 +305,8 @@ body {
 }
 
 .text-clip-red {
-    background: linear-gradient(to right, var(--rgba-red-5) 0,
-            var(--rgba-red-5) 100%), url('../images/noise.svg');
+    background: linear-gradient(to right, var(--rgba-red-7) 0,
+            var(--rgba-red-7) 100%), url('../images/noise.svg');
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -317,8 +316,8 @@ body {
 }
 
 .text-clip-green {
-    background: linear-gradient(to right, var(--rgba-green-5) 0,
-            var(--rgba-green-5) 100%), url('../images/noise.svg');
+    background: linear-gradient(to right, var(--rgba-green-7) 0,
+            var(--rgba-green-7) 100%), url('../images/noise.svg');
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -327,91 +326,87 @@ body {
     filter: brightness(0.95);
 }
 
-
-
-
 .bg-effect-primary {
-    background: linear-gradient(to right, var(--rgba-primary-5) 0,
-            var(--rgba-primary-5) 100%),
+    background: linear-gradient(to right, var(--rgba-primary-7) 0,
+            var(--rgba-primary-7) 100%),
         url('../images/noise.svg');
-
 }
 
 .bg-effect-secondary {
-    background: linear-gradient(to right, var(--rgba-secondary-5) 0,
-            var(--rgba-secondary-5) 100%),
+    background: linear-gradient(to right, var(--rgba-secondary-7) 0,
+            var(--rgba-secondary-7) 100%),
         url('../images/noise.svg');
 }
 
 .bg-effect-white {
-    background: linear-gradient(to right, var(--rgba-white-5) 0,
-            var(--rgba-white-5) 100%),
+    background: linear-gradient(to right, var(--rgba-white-7) 0,
+            var(--rgba-white-7) 100%),
         url('../images/noise.svg');
 }
 
 .bg-effect-light {
-    background: linear-gradient(to right, var(--rgba-light-5) 0,
-            var(--rgba-light-5) 100%),
+    background: linear-gradient(to right, var(--rgba-light-7) 0,
+            var(--rgba-light-7) 100%),
         url('../images/noise.svg');
 }
 
 .bg-effect-light-2 {
-    background: linear-gradient(to right, var(--rgba-light-2-5) 0,
-            var(--rgba-light-2-5) 100%),
+    background: linear-gradient(to right, var(--rgba-light-2-7) 0,
+            var(--rgba-light-2-7) 100%),
         url('../images/noise.svg');
 }
 
 .bg-effect-gray {
-    background: linear-gradient(to right, var(--rgba-gray-5) 0,
-            var(--rgba-gray-5) 100%),
+    background: linear-gradient(to right, var(--rgba-gray-7) 0,
+            var(--rgba-gray-7) 100%),
         url('../images/noise.svg');
 }
 
 .bg-effect-dark {
-    background: linear-gradient(to right, var(--rgba-dark-5) 0,
-            var(--rgba-dark-5) 100%),
+    background: linear-gradient(to right, var(--rgba-dark-7) 0,
+            var(--rgba-dark-7) 100%),
         url('../images/noise.svg');
 }
 
 .bg-effect-blue {
-    background: linear-gradient(to right, var(--rgba-blue-5) 0,
-            var(--rgba-blue-5) 100%),
+    background: linear-gradient(to right, var(--rgba-blue-7) 0,
+            var(--rgba-blue-7) 100%),
         url('../images/noise.svg');
 }
 
 .bg-effect-red {
-    background: linear-gradient(to right, var(--rgba-red-5) 0,
-            var(--rgba-red-5) 100%),
+    background: linear-gradient(to right, var(--rgba-red-7) 0,
+            var(--rgba-red-7) 100%),
         url('../images/noise.svg');
 }
 
 .bg-effect-green {
-    background: linear-gradient(to right, var(--rgba-green-5) 0,
-            var(--rgba-green-5) 100%),
+    background: linear-gradient(to right, var(--rgba-green-7) 0,
+            var(--rgba-green-7) 100%),
         url('../images/noise.svg');
 }
 
 .bg-effect-black-fogra {
-    background: linear-gradient(to right, var(--rgba-black-fogra-5) 0,
-            var(--rgba-black-fogra-5) 100%),
+    background: linear-gradient(to right, var(--rgba-black-fogra-7) 0,
+            var(--rgba-black-fogra-7) 100%),
         url('../images/noise.svg');
 }
 
 .bg-effect-black {
-    background: linear-gradient(to right, var(--rgba-black-5) 0,
-            var(--rgba-black-5) 100%),
+    background: linear-gradient(to right, var(--rgba-black-7) 0,
+            var(--rgba-black-7) 100%),
         url('../images/noise.svg');
 }
 
 .bg-effect-primary-light {
-    background: linear-gradient(to right, var(--rgba-primary-light-5) 0,
-            var(--rgba-primary-light-5) 100%),
+    background: linear-gradient(to right, var(--rgba-primary-light-7) 0,
+            var(--rgba-primary-light-7) 100%),
         url('../images/noise.svg');
 }
 
 .bg-effect-secondary-light {
-    background: linear-gradient(to right, var(--rgba-secondary-light-5) 0,
-            var(--rgba-secondary-light-5) 100%),
+    background: linear-gradient(to right, var(--rgba-secondary-light-7) 0,
+            var(--rgba-secondary-light-7) 100%),
         url('../images/noise.svg');
 }
 
@@ -425,6 +420,22 @@ h2 {
     font-family: var(--secondary-font);
     letter-spacing: 0.1rem;
     font-weight: 200;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.vh-100vh {
+    height: 100vh;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.vw-100vw {
+    width: 100vw;
 }
 
 .d-flex {
@@ -487,6 +498,10 @@ h2 {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.p0 {
+    padding: 0;
 }
 
 .p {
@@ -553,6 +568,10 @@ h2 {
 
 .pb-lg {
     padding-bottom: var(--padding-container-large);
+}
+
+.m-0 {
+    margin: 0;
 }
 
 .m {
@@ -1676,6 +1695,24 @@ form {
 }
 
 /* =================Animations=============== */
+.loader {
+    background: linear-gradient(to right, var(--secondary) 50%, transparent 50%);
+    animation: spin 1s infinite linear;
+}
+
+.loader:before {
+    display: block;
+    content: '';
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    background: #222;
+    border-radius: 50%;
+}
+
 .spin-forwards {
     animation: spin-forwards 1s linear infinite;
 }
@@ -1765,7 +1802,7 @@ form {
     transition: all 0.6s ease-out;
 }
 
-/* =================Buttons=============== */
+/* ==========Buttons========== */
 .btn {
     display: inline-block;
     font-weight: 400;
@@ -1784,7 +1821,7 @@ form {
 
 .btn-primary {
     color: var(--light-2);
-    background: linear-gradient(to right, var(--rgba-primary-5) 0, var(--rgba-primary-5) 100%),
+    background: linear-gradient(to right, var(--rgba-primary-7) 0, var(--rgba-primary-7) 100%),
         url('../images/noise.svg');
     background-size: 200% 200%;
     background-repeat: no-repeat;
@@ -1807,6 +1844,8 @@ form {
 .btn.animate {
     animation: bounce 0.5s ease-in;
 }
+
+/* ==========Card========== */
 
 .card {
     position: relative;
@@ -1872,26 +1911,14 @@ form {
 }
 
 
-.h-100 {
-    height: 100%;
+svg {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
 }
 
-.vh-100vh {
-    height: 100vh;
-}
-
-.w-100 {
-    width: 100%;
-}
-
-.vw-100vw {
-    width: 100vw;
-}
-
-.m-0 {
-    margin: 0;
-}
-
+/* =============Nav=========== */
 .nav {
     position: fixed;
     top: 0;
@@ -1954,7 +1981,7 @@ form {
 .nav__item:hover .nav__link {
     opacity: 1;
 }
-
+ /* ===========Background======= */
 .bg-art {
     position: relative;
     background-image: url('../images/bg.jpg');
@@ -1965,7 +1992,7 @@ form {
 
 .bg-art-footer {
     position: relative;
-    background-image: url('../images/footer-bg.jpg');
+    background-image: url('../images/footer.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1982,7 +2009,7 @@ form {
     background: linear-gradient(to right, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.2) 100%);
     z-index: 1;
 }
-
+/* =========Header=========== */
 .header {
     position: relative;
     padding-top: 3rem;

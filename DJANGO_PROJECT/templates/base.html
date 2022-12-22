@@ -34,17 +34,54 @@
     {% block js %}
     {% endblock %}
 
+    <style>
+        .loader-wrapper {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+        }
+        .loader-bg{
+            position: relative;
+            z-index: 1000;
+
+        }
+
+        .loader-inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1110;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
 </head>
 
 <body id="top">
     {% block nav %}
     {% include 'partials/nav.html' %}
     {% endblock %}
-    
-        <header class="parallax header bg-art" data="0.7">
-            {% block header %}
-            {% endblock %}
-        </header>
+
+    <div class="loader-wrapper bg-dark">
+        <div class="loader-bg h-100 w-100">
+            <div class="loader-inner">
+                <img src="{% static 'images/loader.svg' %}" alt="loader">
+            </div>
+        </div>
+    </div>
+
+    <header class="parallax header bg-art" data="0.7">
+        {% block header %}
+        {% endblock %}
+    </header>
 
     {% block content %}
     {% endblock %}
