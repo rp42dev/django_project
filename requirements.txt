@@ -16,4 +16,4 @@ virtualenv==20.13.0+ds
 virtualenv-clone==0.3.0
 virtualenvwrapper==4.8.4
 zipp==1.0.0
-fontawesomefree==6.2.1
+
