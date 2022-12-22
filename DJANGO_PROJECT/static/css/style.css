@@ -1695,23 +1695,6 @@ form {
 }
 
 /* =================Animations=============== */
-.loader {
-    background: linear-gradient(to right, var(--secondary) 50%, transparent 50%);
-    animation: spin 1s infinite linear;
-}
-
-.loader:before {
-    display: block;
-    content: '';
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90px;
-    height: 90px;
-    background: #222;
-    border-radius: 50%;
-}
 
 .spin-forwards {
     animation: spin-forwards 1s linear infinite;
@@ -1981,7 +1964,8 @@ svg {
 .nav__item:hover .nav__link {
     opacity: 1;
 }
- /* ===========Background======= */
+
+/* ===========Background======= */
 .bg-art {
     position: relative;
     background-image: url('../images/bg.jpg');
@@ -2009,7 +1993,8 @@ svg {
     background: linear-gradient(to right, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.2) 100%);
     z-index: 1;
 }
-/* =========Header=========== */
+
+/* ===========Header=========== */
 .header {
     position: relative;
     padding-top: 3rem;
@@ -2063,13 +2048,60 @@ svg {
     z-index: 2;
 }
 
-/* ========Contact======= */
+/* =============Contact============ */
 .contact {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     max-width: 600px;
+}
+
+/* ==============Loader============ */
+.loader-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.loader-bg {
+    position: relative;
+    z-index: 1000;
+
+}
+
+.loader-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1110;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.loader {
+    background: linear-gradient(to right, var(--secondary) 50%, transparent 50%);
+    animation: spin 1s infinite linear;
+}
+
+.loader:before {
+    display: block;
+    content: '';
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    background: #222;
+    border-radius: 50%;
 }
 
 /* Responsive styles for small screens */
