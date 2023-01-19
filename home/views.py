@@ -1,6 +1,6 @@
 from django.views.decorators.http import require_POST
 from django.core.mail import send_mail
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.conf import settings
 
 
@@ -25,6 +25,6 @@ def contact(request):
             fail_silently=False,
         )
     
-    return render(request, 'home.html')
+    return redirect('home')
             
              
