@@ -4,7 +4,8 @@
         <div class="row fade">
             <div class="col-12 col-md-6">
                 <div class="contact-form">
-                    <form id="contact-form" method="post" action="contact.php">
+                    <form id="contact-form" method="post" action="{% url 'contact' %}">
+                        {% csrf_token %}
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Name" name="name" required>
                         </div>
