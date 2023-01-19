@@ -1,14 +1,14 @@
-<div class="container w-100 home">
-    <div id="trigger3" class="row animate">
-        <div class="col-12 col-md-6 home__content">
-            <h1 class="text-nowrap anim">
-                <span class="home__content-rp42 text-clip-gray">RP</spaan><span class="text-clip-primary">42</span></h1>
-            <h2 class="anim home__heading display-1 text-gray text-nowrap">Tech Landing</h2>
-            <a href="#contact" class="anim btn btn-primary m mx-sm animate">
-                <i class="fa fa-envelope"></i>
-                Contact Us</a>
+{% load static %}
+
+<div class="w-100 home">
+    <div class="home__content">
+        <div class="home__rp42">
+            <h1 class="text-nowrap">
+                <span class="text-gray d-inline-block">RP</spaan><span class="text-primary d-inline-block">42</span>
+            </h1>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="home__img-wrapper">
+            <img class="home__image" src={% static './images/piramids.jpg' %} alt="Piramids">
         </div>
     </div>
 </div>

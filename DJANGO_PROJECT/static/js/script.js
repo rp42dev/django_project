@@ -17,5 +17,6 @@ $(window).on('load', function () {
     // Loader animation
     setTimeout(function () {
         $('.loader-wrapper').hide(200);
-    }, 2000);
+    }, 1000);
 });
+

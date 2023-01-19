@@ -14,16 +14,7 @@ RP 42
 {% endblock %}
 
 {% block content %}
-<div id="trigger2">
-    {% include 'partials/about_section.html' %}
-
-    {% include 'partials/contact_section.html' %}
-
-    {% include 'partials/services_section.html' %}
-
-    <section class="spacer panel bottom"></section>
-</div>
+{% include 'partials/services.html' %}
+{% include 'partials/about.html' %}
+{% include 'partials/contact.html' %}
 {% endblock %}
-
-
-

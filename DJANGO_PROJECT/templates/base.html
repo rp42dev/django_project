@@ -23,13 +23,16 @@
 
     {% block css %}
     {% endblock %}
+
     <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
         integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 
-    <script src="{% static 'js/scrollmagic/ScrollMagic.min.js' %}"></script>
-    <script src="{% static 'js/scrollmagic/plugins/animation.gsap.min.js' %}"></script>
+    <script defer src="{% static 'js/fit-text.js' %}"></script>
+    <script defer src="{% static 'js/curtains.umd.min.js' %}"></script>
     <script defer src="{% static 'js/script.js' %}"></script>
+
     {% block js %}
     {% endblock %}
 
@@ -40,15 +43,15 @@
     {% include 'partials/nav.html' %}
     {% endblock %}
 
-    <div class="loader-wrapper bg-dark">
+    {% comment %} <div class="loader-wrapper bg-dark">
         <div class="loader-bg h-100 w-100">
             <div class="loader-inner">
                 <img src="{% static 'images/loader.svg' %}" alt="loader">
             </div>
         </div>
-    </div>
+    </div> {% endcomment %}
 
-    <header class="parallax header bg-art" data="0.7">
+    <header>
         {% block header %}
         {% endblock %}
     </header>
@@ -57,7 +60,6 @@
     {% endblock %}
 
     {% block footer %}
-    {% include 'partials/footer.html' %}
     {% endblock %}
 
     {% block postload_js %}
@@ -66,3 +68,9 @@
 </body>
 
 </html>
+
+
+<script>
+
+
+</script>
