@@ -21,7 +21,7 @@ def contact(request):
             f"New contact form submission from {name}", # subject
             message_body, # message
             email, # from email
-            [settings.EMAIL_HOST_USER], # to email
+            [settings.DEFAULT_FROM_EMAIL], # to email
             fail_silently=False,
         )
     
