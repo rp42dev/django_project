@@ -17,9 +17,10 @@
     --red-accent: #F66A6A;
     --dark: var(--black-fogra);
     --white: #ffffff;
-    --light: #f4f4f4;
+    --light: #fefefe;
     --light-2: #cccccc;
-    --gray: rgb(145, 143, 143);
+    --gray: #918f8f;
+    --gray-light: #aeabab;
     --green: var(--rifle-green);
     --secondary: var(--mauve-taupe);
     --primary: var(--artichoke);
@@ -174,6 +175,7 @@ p{
 .bg-light-2 {
     background-color: var(--light-2);
 }
+
 
 .text-gray {
     color: var(--gray);
@@ -686,8 +688,6 @@ h2 {
 .container-fluid {
     position: relative;
     width: 100%;
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
     margin-left: auto;
     margin-right: auto;
 }
@@ -707,92 +707,66 @@ h2 {
 .col {
     flex: 0 0 100%;
     max-width: 100%;
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
 }
 
 .col-1 {
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
 }
 
 .col-2 {
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
 }
 
 .col-3 {
     flex: 0 0 25%;
     max-width: 25%;
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
 }
 
 .col-4 {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
 }
 
 .col-5 {
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
 }
 
 .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
 }
 
 .col-7 {
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
 }
 
 .col-8 {
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
 }
 
 .col-9 {
     flex: 0 0 75%;
     max-width: 75%;
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
 }
 
 .col-10 {
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
 }
 
 .col-11 {
     flex: 0 0 91.666667%;
     max-width: 91.666667%;
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
 }
 
 .col-12 {
     flex: 0 0 100%;
     max-width: 100%;
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
 }
 
 @media screen and (min-width: 576px) {
@@ -811,71 +785,51 @@ h2 {
     .col-sm {
         flex: 0 0 100%;
         max-width: 100%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-sm-1 {
         flex: 0 0 8.333333%;
         max-width: 8.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-sm-2 {
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-sm-3 {
         flex: 0 0 25%;
         max-width: 25%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-sm-4 {
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-sm-5 {
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-sm-6 {
         flex: 0 0 50%;
         max-width: 50%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-sm-7 {
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-sm-8 {
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-sm-9 {
         flex: 0 0 75%;
         max-width: 75%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-sm-10 {
@@ -899,71 +853,51 @@ h2 {
     .col-md {
         flex: 0 0 100%;
         max-width: 100%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-md-1 {
         flex: 0 0 8.333333%;
         max-width: 8.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-md-2 {
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-md-3 {
         flex: 0 0 25%;
         max-width: 25%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-md-4 {
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-md-5 {
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-md-6 {
         flex: 0 0 50%;
         max-width: 50%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-md-7 {
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-md-8 {
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-md-9 {
         flex: 0 0 75%;
         max-width: 75%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-md-10 {
@@ -988,92 +922,66 @@ h2 {
     .col-lg {
         flex: 0 0 100%;
         max-width: 100%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-lg-1 {
         flex: 0 0 8.333333%;
         max-width: 8.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-lg-2 {
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-lg-3 {
         flex: 0 0 25%;
         max-width: 25%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-lg-4 {
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-lg-5 {
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-lg-6 {
         flex: 0 0 50%;
         max-width: 50%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-lg-7 {
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-lg-8 {
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-lg-9 {
         flex: 0 0 75%;
         max-width: 75%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-lg-10 {
         flex: 0 0 83.333333%;
         max-width: 83.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-lg-11 {
         flex: 0 0 91.666667%;
         max-width: 91.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-lg-12 {
         flex: 0 0 100%;
         max-width: 100%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 }
 
@@ -1094,93 +1002,67 @@ h2 {
     .col-xl {
         flex: 0 0 100%;
         max-width: 100%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xl-1 {
         flex: 0 0 8.333333%;
         max-width: 8.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xl-2 {
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xl-3 {
         flex: 0 0 25%;
         max-width: 25%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xl-4 {
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xl-5 {
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xl-6 {
         flex: 0 0 50%;
         max-width: 50%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xl-7 {
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xl-8 {
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xl-9 {
         flex: 0 0 75%;
         max-width: 75%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xl-10 {
         flex: 0 0 83.333333%;
         max-width: 83.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
 
     }
 
     .col-xl-11 {
         flex: 0 0 91.666667%;
         max-width: 91.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xl-12 {
         flex: 0 0 100%;
         max-width: 100%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 }
 
@@ -1201,92 +1083,66 @@ h2 {
     .col-xxl {
         flex: 0 0 100%;
         max-width: 100%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xxl-1 {
         flex: 0 0 8.333333%;
         max-width: 8.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xxl-2 {
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xxl-3 {
         flex: 0 0 25%;
         max-width: 25%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xxl-4 {
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xxl-5 {
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xxl-6 {
         flex: 0 0 50%;
         max-width: 50%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xxl-7 {
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xxl-8 {
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xxl-9 {
         flex: 0 0 75%;
         max-width: 75%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xxl-10 {
         flex: 0 0 83.333333%;
         max-width: 83.333333%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xxl-11 {
         flex: 0 0 91.666667%;
         max-width: 91.666667%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 
     .col-xxl-12 {
         flex: 0 0 100%;
         max-width: 100%;
-        padding-left: var(--padding-container);
-        padding-right: var(--padding-container);
     }
 }
 
@@ -1835,25 +1691,23 @@ form {
     min-width: 0;
     word-wrap: break-word;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: var(--border-radius);
     height: 100%;
     /* min-height: 200px; */
 }
 
 .card__header {
-    padding: 1.25rem 1.5rem;
+    padding: 2rem;
     margin-bottom: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .card__body {
     flex: 1 1 auto;
-    padding: 1.25rem 1.5rem;
+    padding: 2rem;
 }
 
 .card__footer {
-    padding: 1.25rem 1.5rem;
+    padding: 2rem;
     background: rgba(0, 0, 0, 0.03);
     border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -1895,7 +1749,7 @@ form {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1.25rem 1.5rem;
+    padding: 2rem;
     border-radius: var(--border-radius);
 }
 
@@ -2015,10 +1869,11 @@ img {
 /* ==============HOME PAGE============ */
 /* =================================== */
 
-
-.section {
+.section,
+section {
     height: 100%;
     min-width: 100vw;
+    padding: 5rem 0;
 }
 
 #about {
