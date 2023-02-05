@@ -23,17 +23,34 @@ Portfolio website for rp42.cloud - web app development and hosting services powe
 - Provide a user with a way to contact me with any questions they may have.
 
 ### Design
-
 #### Structure
 - The website is designed to be simple and easy to navigate.
 - The website is designed to be responsive on all devices.
 - Plenty of white space is used to make the website easy to read.
 - The website is designed to be minimalistic and not cluttered.
 
-#### Wireframes
-- [Home](development\wireftames\index-laptop.png) 
-- [About](development\wireftames\about-laptop.png)
-- [Contact](development\wireftames\contact-laptop.png)
+ - Header:
+    - Include the company logo
+    - Clear call to action (e.g. "Get in Touch", "Learn More")
+  - Hero Section:
+    - The main focal point
+    - Clearly communicate the company's value proposition
+    - Brief overview of services/tagline/headline highlighting benefits offered
+ - Features and Benefits:
+    - Highlight key features of services
+    - Highlight benefits to potential clients
+  - Testimonials:
+    - Include past client testimonials to build trust and credibility
+  - Call to Action:
+    - Clear and prominent action
+  - Footer:
+    - Include social media links
+    - Copywrite information
+    - Privacy policy and terms of service links
+
+- [Home](development/wireftames/index-laptop.png)
+- [About](development/wireftames/about-laptop.png)
+- [Contact](development/wireftames/contact-laptop.png)
 
 
 Technologies used:
