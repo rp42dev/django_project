@@ -48,9 +48,8 @@ Portfolio website for rp42.cloud - web app development and hosting services powe
     - Copywrite information
     - Privacy policy and terms of service links
 
-- [Home](development/wireftames/index-laptop.png)
-- [About](development/wireftames/about-laptop.png)
-- [Contact](development/wireftames/contact-laptop.png)
+*** ![Wireframes](development/wireftames/wireframes.png)
+
 
 
 Technologies used:
