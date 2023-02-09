@@ -9,10 +9,25 @@
         Use the form to give me as much detail as possible and
         I’ll get back to you as soon as I can.
       </p>
-      <a href="#contact" class="btn scrollto">Send now</a>
     </div>
     <div class="split__img bg-primary">
       <img src="{% static 'img/about.jpg' %}" alt="Hero Image">
+      <div class="form__overlay">
+
+        <form action="" method="post" class="form">
+          {% csrf_token %}
+          <div class="form__group">
+            <input type="text" name="name" class="form__input" placeholder="Your name" id="name" required>
+          </div>
+          <div class="form__group">
+            <input type="email" name="email" class="form__input" placeholder="Your email" id="email" required>
+          </div>
+          <div class="form__group">
+            <textarea name="message" class="form__input" placeholder="Your message" id="message" required></textarea>
+          </div>
+          <button class="btn btn--primary">Send</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
