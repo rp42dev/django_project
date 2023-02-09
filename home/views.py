@@ -27,6 +27,7 @@ def contact(request):
                 [settings.DEFAULT_FROM_EMAIL], # to email
                 fail_silently=False,
             )
+            return redirect('home')
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
         
