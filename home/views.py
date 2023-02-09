@@ -7,7 +7,7 @@ from django.conf import settings
 def home(request):
     return render(request, 'home.html')
 
-@require_POST
+
 def contact(request):
     if request.method == 'POST':
         name = request.POST['name']
@@ -16,7 +16,6 @@ def contact(request):
         
         message_body = f'Name: {name}\nEmail: {email}\nMessage: {message}'
 
-        # Send email
         send_mail(
             f"New contact form submission from {name}", # subject
             message_body, # message
@@ -25,6 +24,8 @@ def contact(request):
             fail_silently=False,
         )
     
-    return redirect('home')
-            
+    return render(request, 'contact.html')
+
+def about(request):
+    return render(request, 'about.html')
              

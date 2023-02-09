@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+RP 42
+{% endblock %}
+
+{% block js %}
+<script defer src="{% static 'js/home.js' %}"></script>
+{% endblock %}
+
+{% block header %}
+{% include 'partials/about/hero.html' %}
+{% endblock %}
+
+{% block content %}
+{% include 'partials/about/featured-goal.html' %}
+{% include 'partials/about/featured-tech.html' %}
+{% include 'partials/about/contact.html' %}
+<div class="spacer"></div>
+{% endblock %}

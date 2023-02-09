@@ -1,10 +1,12 @@
-<nav class="nav text-gray">
-    <div class="nav__logo nav__item d-none d-md-block">
-        <a class="nav__link display-3" href="#top">rp<span class="text-primary-light">42</span></a>
+<nav class="nav bg-light9">
+    <div class="nav__inner">
+        <div class="nav__logo d-none d-md-block">
+            <a class="gray nav__logo-link" href="{% url 'home' %}">RP<span class="primary">42</span></a>
+        </div>
+        <ul class="nav__items">
+            <li id="nav-menu" class="nav__item"><a class="nav__link medium-text" href="#services">projects</a></li>
+            <li id="nav-menu" class="nav__item"><a class="nav__link medium-text" href="{% url 'about' %}">about</a></li>
+            <li id="nav-menu" class="nav__item"><a class="btn light medium-text" href="{% url 'contact' %}">contact</a></li>
+        </ul>
     </div>
-    <ul class="nav__items">
-        <li id="nav-menu" class="nav__item display-6"><a class="nav__link" href="#services">services</a></li>
-        <li id="nav-menu" class="nav__item display-6"><a class="nav__link" href="#about">about</a></li>
-        <li id="nav-menu" class="nav__item display-6"><a class="nav__link" href="#contact">contact</a></li>
-    </ul>
 </nav>

@@ -10,11 +10,13 @@ RP 42
 {% endblock %}
 
 {% block header %}
-{% include 'partials/header.html' %}
+{% include 'partials/home/hero.html' %}
 {% endblock %}
 
 {% block content %}
-{% include 'partials/services.html' %}
-{% include 'partials/about.html' %}
-{% include 'partials/contact.html' %}
+{% include 'partials/home/featured-apart.html' %}
+{% include 'partials/home/featured-cards.html' %}
+{% include 'partials/home/featured-whether.html' %}
+{% include 'partials/home/contact.html' %}
+<div class="spacer"></div>
 {% endblock %}

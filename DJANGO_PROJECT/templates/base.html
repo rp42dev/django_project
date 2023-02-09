@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-
     {% block meta %}
     {% endblock %}
 
@@ -45,22 +43,15 @@
     {% include 'partials/nav.html' %}
     {% endblock %}
 
-    {% comment %} <div class="loader-wrapper bg-dark">
-        <div class="loader-bg h-100 w-100">
-            <div class="loader-inner">
-                <img src="{% static 'images/loader.svg' %}" alt="loader">
-            </div>
-        </div>
-    </div> {% endcomment %}
-
     <header>
         {% block header %}
         {% endblock %}
     </header>
 
-    {% block content %}
-    {% endblock %}
-
+    <div class="x-hidden">
+        {% block content %}
+        {% endblock %}
+    </div>
     {% block footer %}
     {% endblock %}
 
@@ -70,8 +61,3 @@
 </body>
 
 </html>
-
-
-<script>
-
-</script>
