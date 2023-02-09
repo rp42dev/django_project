@@ -2,23 +2,8 @@ $(window).scroll(function () {
     // Hide navbar on scroll down and show on scroll up
     $(window).scrollTop() > 0 ? $('.nav').css('top', '-120px') : $('.nav').css('top', '0');
 
-    // Parallax effect
-    $('.parallax').css({
-        'background-position': 'center ' + ($(this).scrollTop() * 0.5) + 'px'
-    });
 });
 
-$(window).on('load', function () {
-    // Remove animation class after animation ends
-    $('.animate').on('animationend', function () {
-        $(this).removeClass('animate');
-    });
-
-    // Loader animation
-    setTimeout(function () {
-        $('.loader-wrapper').hide(200);
-    }, 1000);
-});
 
 $(window).on('load', function () {
     if ($('.message').length) {
@@ -26,4 +11,5 @@ $(window).on('load', function () {
             $('.message').hide(200);
         }, 3000);
     }
+    jQuery(".responsive_headline").fitText(1.2, { minFontSize: '43px', maxFontSize: '50px' });
 });

@@ -3,29 +3,29 @@
 <div class="spacer my-4"></div>
 <section id="hero">
   <div class="container split">
-    <div class="p-2 py-3 p-sm-3 py-xl-4 split__content m-0 m-sm-3 my-0 mr-0">
-      <h1 class="header-text gray">Get in <span class=" primary">touch</span></h1>
+    <div class="p-2 py-3 p-sm-3 py-xl-4 split__content m-0 m-sm-3 my-0 mr-0 fade-left">
+      <h1 class="header-text gray responsive_headline">Get in <span class=" primary">touch</span></h1>
       <p class="large-text">
         Use the form to give me as much detail as possible and
         I’ll get back to you as soon as I can.
       </p>
     </div>
-    <div class="split__img bg-primary">
+    <div class="split__img bg-primary fade-right">
       <img src="{% static 'img/about.jpg' %}" alt="Hero Image">
       <div class="form__overlay">
 
         <form action="" method="post" class="form">
           {% csrf_token %}
-          <div class="form__group">
+          <div class="form__group left">
             <input type="text" name="name" class="form__input" placeholder="Your name" id="name" required>
           </div>
-          <div class="form__group">
+          <div class="form__group right">
             <input type="email" name="email" class="form__input" placeholder="Your email" id="email" required>
           </div>
-          <div class="form__group">
+          <div class="form__group left">
             <textarea name="message" class="form__input" placeholder="Your message" id="message" required></textarea>
           </div>
-          <button class="btn btn--primary">Send</button>
+          <button class="btn btn--primary right">Send</button>
         </form>
       </div>
     </div>

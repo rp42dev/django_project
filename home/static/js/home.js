@@ -1,44 +1,51 @@
 $(document).ready(function () {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from('.home__rp42 h1', {
-        y: 100,
-        opacity: 0,
-        duration: 1,
-        delay: 0.5,
-        ease: 'power4.out'
-    });
-
-    gsap.from('.home__image', {
-        x: 100,
-        opacity: 0,
-        duration: 1,
-        delay: 0.5,
-        ease: 'power4.out'
-    });
-
+    const splitElements = document.querySelectorAll('.fade-left');
+    const imageElemants = document.querySelectorAll('.fade-right');
+    splitElements.forEach((splitElement) => {
         gsap.timeline({
             scrollTrigger: {
-                trigger: ".home__content",
-                start: '80% 80%',
+                trigger: splitElement,
+                start: 'top 80%',
                 end: '+=80%',
                 scrub: 2,
             }
         })
-            .fromTo(".home__rp42 h1", {
-                x: 20,
+            .fromTo(splitElement, {
+                y: 100,
+                x: -100,
+                opacity: 0,
             }, {
+                y: 0,
                 x: 0,
-                duration: 2,
-                ease: 'power4.out',
-            })
-            .fromTo(".home__img-wrapper", {
-                x: -10,
-            }, {
-                x: 0,
+                opacity: 1,
                 duration: 1,
                 ease: 'power4.out',
-            }, 0);
+            });
+    });
+
+    imageElemants.forEach((imageElemant) => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: imageElemant,
+                start: 'top 80%',
+                end: '+=80%',
+                scrub: 2,
+            }
+        })
+            .fromTo(imageElemant, {
+                y: 100,
+                x: 100,
+                opacity: 0,
+            }, {
+                y: 0,
+                x: 0,
+                opacity: 1,
+                duration: 1,
+                ease: 'power4.out',
+            });
+    });
 
     const rightElements = document.querySelectorAll('.right');
 

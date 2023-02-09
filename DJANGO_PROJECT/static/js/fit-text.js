@@ -10,7 +10,6 @@
 */
 
 (function ($) {
-
     $.fn.fitText = function (kompressor, options) {
         // Setup options
         var compressor = kompressor || 1,
@@ -40,3 +39,4 @@
     };
 
 })(jQuery);
+
