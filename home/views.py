@@ -1,6 +1,9 @@
 from django.views.decorators.http import require_POST
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
+from django.http import HttpResponse, HttpResponseRedirect
+from django.core.mail import BadHeaderError
+from django.contrib import messages
 from django.conf import settings
 
 
@@ -16,13 +19,18 @@ def contact(request):
         
         message_body = f'Name: {name}\nEmail: {email}\nMessage: {message}'
 
-        send_mail(
-            f"New contact form submission from {name}", # subject
-            message_body, # message
-            email, # from email
-            [settings.DEFAULT_FROM_EMAIL], # to email
-            fail_silently=False,
-        )
+        try:
+            send_mail(
+                f"New contact form submission from {name}", # subject
+                message_body, # message
+                email, # from email
+                [settings.DEFAULT_FROM_EMAIL], # to email
+                fail_silently=False,
+            )
+        except BadHeaderError:
+            return HttpResponse('Invalid header found.')
+        
+        messages.success(request, 'Your message has been sent!')
     
     return render(request, 'contact.html')
 

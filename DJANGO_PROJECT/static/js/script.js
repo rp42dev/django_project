@@ -20,3 +20,10 @@ $(window).on('load', function () {
     }, 1000);
 });
 
+$(window).on('load', function () {
+    if ($('.message').length) {
+        setTimeout(function () {
+            $('.message').hide(200);
+        }, 3000);
+    }
+});
