@@ -27,12 +27,11 @@ def contact(request):
                 [settings.DEFAULT_FROM_EMAIL], # to email
                 fail_silently=False,
             )
-            return redirect('home')
+            messages.success(request, 'Your message has been sent!')
+            return redirect('contact')
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
         
-        messages.success(request, 'Your message has been sent!')
-    
     return render(request, 'contact.html')
 
 def about(request):
