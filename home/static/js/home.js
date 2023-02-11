@@ -10,6 +10,7 @@ $(document).ready(function () {
                 start: 'top 80%',
                 end: '+=80%',
                 scrub: 2,
+                marker: true,
             }
         })
             .fromTo(splitElement, {
@@ -32,6 +33,7 @@ $(document).ready(function () {
                 start: 'top 80%',
                 end: '+=80%',
                 scrub: 2,
+                marker: true,
             }
         })
             .fromTo(imageElemant, {
