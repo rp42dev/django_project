@@ -8,7 +8,7 @@
     /* 687759 666363 FFFFFF D9D9D9 323131 3F3D3D */
     --primary-color: #687759;
     --secondary-color: #666363;
-    --cream-color: #e4c7ae;
+    --cream-color: #fde5c6;
     --white-color: #f3f3ee;
     --light-color: #ebede8;
     --dark-color: #323131;
@@ -18,7 +18,7 @@
 
     --primary-color-09: rgba(104, 119, 89, 0.8);
     --secondary-color-09: rgba(102, 99, 99, 0.8);
-    --cream-color-09: rgba(228, 199, 174, 0.8);
+    --cream-color-09: rgba(253, 223, 198, 0.8);
     --white-color-09: rgba(243, 243, 238, 0.8);
     --light-color-09: rgba(235, 237, 232, 0.8);
     --dark-color-09: rgba(50, 49, 49, 0.8);
@@ -2048,6 +2048,16 @@ a:hover {
         height: 50vh;
         max-width: 100%;
     }
+
+    .image__feature {
+
+        max-height: 60vh;
+    }
+
+    .image__feature img {
+        max-height: 60vh;
+    }
+
     .feature-text {
         padding-bottom: 4rem;
          position: relative;

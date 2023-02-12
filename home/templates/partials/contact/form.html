@@ -1,15 +1,16 @@
-<div class="form__overlay">
-    <form action="" method="post" class="form">
-        {% csrf_token %}
-        <div class="form__group left">
-            <input type="text" name="name" class="form__input" placeholder="Your name" id="name" required>
-        </div>
-        <div class="form__group right">
-            <input type="email" name="email" class="form__input" placeholder="Your email" id="email" required>
-        </div>
-        <div class="form__group left">
-            <textarea name="message" class="form__input" placeholder="Your message" id="message" required></textarea>
-        </div>
-        <button class="btn btn--primary right">Send</button>
-    </form>
-</div>
+ <div class="form__overlay">
+
+     <form action="" method="post" class="form">
+         {% csrf_token %}
+         <div class="form__group left">
+             <input type="text" name="name" class="form__input" placeholder="Your name" id="name" required>
+         </div>
+         <div class="form__group right">
+             <input type="email" name="email" class="form__input" placeholder="Your email" id="email" required>
+         </div>
+         <div class="form__group left">
+             <textarea name="message" class="form__input" placeholder="Your message" id="message" required></textarea>
+         </div>
+         <button class="btn btn--primary right">Send</button>
+     </form>
+ </div>
