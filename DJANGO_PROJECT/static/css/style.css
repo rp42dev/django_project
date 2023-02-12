@@ -55,11 +55,17 @@ body {
 /* Font sizes base 32px scale 1.333 */
 /* Sizing and spacing always in multiples of 8px */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--secondary-font);
 }
 
-p, a {
+p,
+a {
     font-family: var(--primary-font);
 }
 
@@ -269,7 +275,7 @@ a:hover {
 /* ========Spacing========= */
 
 .mt-0 {
-    margin-top: 0rem;	
+    margin-top: 0rem;
 }
 
 .mb-0 {
@@ -429,7 +435,7 @@ a:hover {
 
 .pb-0 {
     padding-bottom: 0rem;
-}   
+}
 
 .pl-0 {
     padding-left: 0rem;
@@ -595,7 +601,7 @@ a:hover {
 
     .pb-sm-0 {
         padding-bottom: 0rem;
-    }   
+    }
 
     .pl-sm-0 {
         padding-left: 0rem;
@@ -757,7 +763,7 @@ a:hover {
 
     .pb-md-0 {
         padding-bottom: 0rem;
-    }   
+    }
 
     .pl-md-0 {
         padding-left: 0rem;
@@ -919,7 +925,7 @@ a:hover {
 
     .pb-lg-0 {
         padding-bottom: 0rem;
-    }   
+    }
 
     .pl-lg-0 {
         padding-left: 0rem;
@@ -1081,7 +1087,7 @@ a:hover {
 
     .pb-xl-0 {
         padding-bottom: 0rem;
-    }   
+    }
 
     .pl-xl-0 {
         padding-left: 0rem;
@@ -1182,7 +1188,7 @@ a:hover {
 
 .container {
     height: 100%;
-    max-width: 1440px;
+    max-width: 1980px;
     margin: auto;
 }
 
@@ -1864,7 +1870,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+    max-width: 1980px;
     margin: auto;
 }
 
@@ -2016,7 +2022,7 @@ a:hover {
 @media screen and (max-width: 768px) {
     .form {
         margin-left: 0%;
-        padding: 2rem;	
+        padding: 2rem;
         gap: 1rem;
     }
 
@@ -2050,7 +2056,6 @@ a:hover {
     }
 
     .image__feature {
-
         max-height: 60vh;
     }
 
@@ -2060,10 +2065,15 @@ a:hover {
 
     .feature-text {
         padding-bottom: 4rem;
-         position: relative;
-         display: grid;
-         place-items: center;
-         height: 100%;
+        position: relative;
+        display: grid;
+        place-items: center;
+        height: 100%;
+        padding-top: 2rem;
+    }
+
+    .device .row {
+        gap: 0rem;
     }
 }
 
@@ -2071,6 +2081,7 @@ a:hover {
     .header-text {
         font-size: 2.6rem;
     }
+
     .large-text {
         font-size: 1.4rem;
     }
