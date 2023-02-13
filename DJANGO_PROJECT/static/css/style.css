@@ -2067,7 +2067,7 @@ a:hover {
     }
 
     .image__feature {
-        max-height: 60vh;
+        max-height: 100%;
     }
 
     .image__feature img {
