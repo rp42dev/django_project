@@ -1955,32 +1955,19 @@ a:hover {
 }
 
 .feature-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    transform: translate(-60%, -50%);
-    background-color: var(--light-color-09);
-    width: 120%;
-    min-height: 60vh;
+   padding-bottom: 4rem;
 }
 
 .image__feature {
     height: 100%;
-    max-height: 80vh;
     width: 100%;
-    display: grid;
-    place-items: center;
 }
 
 .image__feature img {
-    min-height: 80vh;
-    width: 100%;
+    width: auto;
     max-width: 100vw;
-    max-height: 80vh;
+    height: 100%;
+    min-height: 100%;
     object-fit: cover;
     transform-origin: center;
 }
@@ -2064,36 +2051,6 @@ a:hover {
     .split__img img {
         height: 50vh;
         max-width: 100%;
-    }
-
-    .image__feature {
-        max-height: 100%;
-    }
-
-    .image__feature img {
-        min-height: 100%;
-        width: 100%;
-        max-width: 100vw;
-        max-height: 100%;
-    }
-
-    .text__container {
-        position: unset;
-    }
-
-    .feature-text {
-        transform: unset;
-        top: 0%;
-        left: 0%;
-        padding-bottom: 4rem;
-        position: relative;
-        height: 100%;
-        width: 100%;
-        padding-top: 2rem;
-    }
-
-    .device .row {
-        gap: 0rem;
     }
 }
 
