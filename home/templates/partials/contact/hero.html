@@ -1,11 +1,11 @@
 {% load static %}
 
-<div class="spacer my-4"></div>
+<div class="spacer my-2"></div>
 <section id="hero">
   <div class="container split">
     <div class="p-2 py-3 p-sm-3 py-xl-4 split__content m-0 m-sm-3 my-0 mr-0 fade-left">
-      <h1 class="header-text gray responsive_headline">Get in <span class=" primary">touch</span></h1>
-      <p class="large-text">
+      <h1 class="left header-text gray responsive_headline">Get in <span class=" primary">touch</span></h1>
+      <p class="large-text right">
         Use the form to give me as much detail as possible and
         I’ll get back to you as soon as I can.<br><br>
 
@@ -14,7 +14,7 @@
       </p>
     </div>
     <div class="split__img fade-right">
-      <img src="{% static 'img/staggered.png' %}" alt="Hero Image">
+      <img src="{% static 'img/staggered.png' %}" class="rotate-7deg" alt="Hero Image">
       {% include 'partials/contact/form.html' %}
     </div>
   </div>

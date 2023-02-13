@@ -1,8 +1,59 @@
 $(document).ready(function () {
-    gsap.registerPlugin(ScrollTrigger);
+    
+    
 
     const splitElements = document.querySelectorAll('.fade-left');
     const imageElemants = document.querySelectorAll('.fade-right');
+
+    // splitElements.forEach((splitElement) => {
+    //     gsap.fromTo(splitElement, {
+    //         y: 300,
+    //         x: -300,
+    //         opacity: 0,
+    //     }, {
+    //         y: 50,
+    //         x: -50,
+    //         opacity: 0.6,
+    //         duration: 2,
+    //         ease: 'power4.out',
+    //     });
+    // });
+
+    // imageElemants.forEach((imageElemant) => {
+    //     gsap.fromTo(imageElemant, {
+    //         y: 300,
+    //         x: 300,
+    //         opacity: 0,
+    //     }, {
+    //         y: 50,
+    //         x: 50,
+    //         opacity: 0.6,
+    //         duration: 2,
+    //         ease: 'power4.out',
+    //     });
+    // });
+
+    const rotatedElem7deg = document.querySelectorAll('.rotate-7deg');  
+
+    rotatedElem7deg.forEach((rotatedElem7deg) => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: rotatedElem7deg,
+                start: 'top 80%',
+                end: '+=80%',
+                scrub: 2,
+                // markers: true,
+            }
+        })
+            .fromTo(rotatedElem7deg, {
+                rotate: 0,
+            }, {
+                rotate: -7,
+                duration: 1,
+                ease: 'power4.out',
+            });
+    });
+
     splitElements.forEach((splitElement) => {
         gsap.timeline({
             scrollTrigger: {
@@ -10,7 +61,7 @@ $(document).ready(function () {
                 start: 'top 80%',
                 end: '+=80%',
                 scrub: 2,
-                marker: true,
+                // markers: true,
             }
         })
             .fromTo(splitElement, {
@@ -33,7 +84,7 @@ $(document).ready(function () {
                 start: 'top 80%',
                 end: '+=80%',
                 scrub: 2,
-                marker: true,
+                // markers: true,
             }
         })
             .fromTo(imageElemant, {
@@ -54,7 +105,7 @@ $(document).ready(function () {
     rightElements.forEach((rightElement) => {
         let amount = rightElement.getAttribute('data-amount');
         if (amount == null) {
-            amount = 10;
+            amount = 30;
         }
         gsap.timeline({
             scrollTrigger: {
@@ -79,7 +130,7 @@ $(document).ready(function () {
     leftElements.forEach((leftElement) => {
         let amount = leftElement.getAttribute('data-amount');
         if (amount == null) {
-            amount = 10;
+            amount = 30;
         }
         gsap.timeline({
             scrollTrigger: {
@@ -103,7 +154,7 @@ $(document).ready(function () {
     upElements.forEach((upElement) => {
         let amount = upElement.getAttribute('data-amount');
         if (amount == null) {
-            amount = 10;
+            amount = 30;
         }
         gsap.timeline({
             scrollTrigger: {
@@ -127,7 +178,7 @@ $(document).ready(function () {
     downElements.forEach((upElement) => {
         let amount = downElement.getAttribute('data-amount');
         if (amount == null) {
-            amount = 10;
+            amount = 30;
         }
         gsap.timeline({
             scrollTrigger: {
@@ -171,27 +222,4 @@ $(document).ready(function () {
     });
 
     ScrollTrigger.refresh();
-
-    // fitText
-    const getThreshold = () => {
-        var width = $(window).width();
-        if (width < 1800 && width > 1200) {
-            threshold = 0.26;
-        } else {
-            threshold = 0.2;
-        }
-        return threshold;
-    }
-
-    $(".home__rp42 h1").fitText(getThreshold());
-
-    $(window).resize(function () {
-        width = $(window).width();
-        if (width < 1800 && width > 1200) {
-            threshold = 0.26;
-        } else {
-            threshold = 0.2;
-        }
-        $(".home__rp42 h1").fitText(threshold);
-    });
 });
