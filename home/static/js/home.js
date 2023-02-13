@@ -1,6 +1,5 @@
 
-
-init = function () {
+(function ($) {
     const splitElements = document.querySelectorAll('.fade-left');
     const imageElemants = document.querySelectorAll('.fade-right');
 
@@ -172,14 +171,5 @@ init = function () {
     });
 
     ScrollTrigger.refresh();
-};
-
-$(window).on('load', function () {
-
-    setTimeout(function () {
-        init();
-    }, 200);
-
-});
-
+})(jQuery);
 
