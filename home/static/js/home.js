@@ -54,6 +54,52 @@ $(document).ready(function () {
             });
     });
 
+    const rotatedleft = document.querySelectorAll('.rotate-left');
+
+    rotatedleft.forEach((elem) => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: elem,
+                start: 'top 80%',
+                end: '+=80%',
+                scrub: 2,
+                // markers: true,
+            }
+        })
+            .fromTo(elem, {
+                rotate: -7,
+                opacity: 0,
+            }, {
+                rotate: 0,
+                opacity: 1,
+                duration: 1,
+                ease: 'power4.out',
+            });
+    });
+
+    const rotatedright = document.querySelectorAll('.rotate-right');
+
+    rotatedright.forEach((elem,) => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: elem,
+                start: 'top 80%',
+                end: '+=80%',
+                scrub: 2,
+                // markers: true,
+            }
+        })
+            .fromTo(elem, {
+                rotate: 7,
+                opacity: 0,
+            }, {
+                rotate: 0,
+                opacity: 1,
+                duration: 1,
+                ease: 'power4.out',
+            });
+    });
+
     splitElements.forEach((splitElement) => {
         gsap.timeline({
             scrollTrigger: {
