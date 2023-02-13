@@ -1651,7 +1651,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .flex__row {
