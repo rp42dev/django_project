@@ -1,32 +1,20 @@
 {% load static %}
-
 <div class="spacer"></div>
 <section>
-  <div class="bg-light fade-right">
-    <div class="container contact">
-      <div class="flex__column p-2 py-4 py-lg-6 p-md-3">
-        <div class="row">
-          <div class="contact__item col-12 col-md-4 bg-primary rotate-right">
-            <h3 class="light">Phone:</h3>
-            <a href="tel:085 785 3809" class="light inline__block medium-text montserrat">085 785 3809</a>
-          </div>
-          <div class="contact__item col-12 col-md-4 bg-white rotate-left">
-            <h3 class="primary">Email:</h3>
-            <a href="mailto:rp42dev@gmail.com" class="primary inline__block medium-text montserrat">rp42dev@gmail.com</a>
-          </div>
-          <div class="contact__item col-12 col-md-4 large-text bg-primary rotate-right">
-            <h3 class="light">Social:</h3>
-            <div class="flex__row social">
-              <a href="https://www.linkedin.com/in/rp42/" class="light inline__block">
-                <i class="fab fa-linkedin fa-2x"></i>
-              </a>
-              <a href="https://github.com/rp42dev" class="light inline__block">
-                <i class="fab fa-github fa-2x"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+  <div class="fade-left">
+    <div class="container contact px-2 px-md-4">
+      <div class="flex__column">
+        <h2 class="gray">Let's Get <span class=" primary">Started</span></h2>
+        <p class="medium-text">
+          If you are ready to take your website to the next level, then let's get started. Contact me today to learn
+          more
+          about my web design services and how I can help you achieve your website goals. I look forward to hearing from
+          you.</p>
+
+          {% include 'partials/contact/contact-info.html' %}
       </div>
-      
+      <div class="spacer-4"></div>
+      {% include 'partials/contact/form.html' %}
     </div>
+  </div>
 </section>

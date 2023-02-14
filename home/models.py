@@ -22,7 +22,7 @@ class Project(models.Model):
     images = models.ManyToManyField(Image, blank=True)
     url = models.URLField(blank=True)
     github = models.URLField(blank=True)
-    seo_title = models.OneToOneField(Seo, on_delete=models.CASCADE, blank=True, null=True)
+    seo = models.OneToOneField(Seo, on_delete=models.CASCADE, blank=True, null=True)
 
     def __str__(self):
         return self.name
@@ -32,7 +32,7 @@ class Service(models.Model):
     description = models.TextField()
     icon = models.CharField(max_length=200)
     image = models.ImageField(upload_to='services/images/', blank=True)
-    seo_title = models.OneToOneField(Seo, on_delete=models.CASCADE, blank=True, null=True)
+    seo = models.OneToOneField(Seo, on_delete=models.CASCADE, blank=True, null=True)
 
     def __str__(self):
         return self.title

@@ -84,30 +84,35 @@ h1 {
     font-size: 3.052rem;
     font-weight: 700;
     color: var(--dark-color);
+    line-height: 120%;
 }
 
 h2 {
     font-size: 2.488rem;
     font-weight: 700;
     color: var(--dark-color);
+    line-height: 120%;
 }
 
 h3 {
     font-size: 2.074rem;
     font-weight: 700;
     color: var(--dark-color);
+    line-height: 120%;
 }
 
 h4 {
     font-size: 1.728rem;
     font-weight: 700;
     color: var(--dark-color);
+    line-height: 120%;
 }
 
 h5 {
     font-size: 1.44rem;
     font-weight: 700;
     color: var(--dark-color);
+    line-height: 120%;
 }
 
 h6 {
@@ -140,6 +145,51 @@ a {
     font-size: 1.4rem;
     color: var(--dark-color);
 }
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.488rem;
+    }
+
+    h2 {
+        font-size: 2.074rem;
+    }
+
+    h3 {
+        font-size: 1.728rem;
+    }
+
+    h4 {
+        font-size: 1.44rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    a {
+        font-size: 0.8rem;
+    }
+
+    .large-text {
+        font-size: 1.4rem;
+    }
+
+    .medium-text {
+        font-size: 1.2rem;
+    }
+}
+
+
+
 
 a {
     text-decoration: none;
@@ -530,7 +580,15 @@ a:hover {
 }
 
 
+
 @media screen and (min-width: 768px) {
+    .pl-md-4 {
+        padding-left: 4rem;
+    }
+
+    .pr-md-4 {
+        padding-right: 4rem;
+    }
     .m-sm {
         margin: 1rem;
     }
@@ -1211,6 +1269,7 @@ a:hover {
     gap: 2rem 2rem;
 }
 
+
 .scroll-x {
     overflow-x: auto;
     overflow-y: hidden;
@@ -1283,20 +1342,20 @@ a:hover {
 }
 
 .d-none {
-    display: none;
+    display: none !important;
 }
 
 @media screen and (min-width: 576px) {
     .d-none-sm {
-        display: none;
+        display: none !important;
     }
 
     .d-sm-block {
-        display: block;
+        display: block !important;
     }
 
     .d-sm-flex {
-        display: flex;
+        display: flex !important;
     }
 
     .col-sm {
@@ -1356,15 +1415,15 @@ a:hover {
 
 @media screen and (min-width: 768px) {
     .d-none-md {
-        display: none;
+        display: none !important;
     }
 
     .d-md-block {
-        display: block;
+        display: block !important;
     }
 
     .d-md-flex {
-        display: flex;
+        display: flex !important;
     }
 
     .col-md {
@@ -1426,15 +1485,15 @@ a:hover {
 @media screen and (min-width: 992px) {
 
     .d-none-lg {
-        display: none;
+        display: none !important;
     }
 
     .d-lg-block {
-        display: block;
+        display: block !important;
     }
 
     .d-lg-flex {
-        display: flex;
+        display: flex !important;
     }
 
     .col-lg {
@@ -1506,15 +1565,15 @@ a:hover {
 @media screen and (min-width: 1200px) {
 
     .d-none-xl {
-        display: none;
+        display: none !important;
     }
 
     .d-xl-block {
-        display: block;
+        display: block !important;
     }
 
     .d-xl-flex {
-        display: flex;
+        display: flex !important;
     }
 
     .col-xl {
@@ -1587,15 +1646,15 @@ a:hover {
 @media screen and (min-width: 1400px) {
 
     .d-none-xxl {
-        display: none;
+        display: none !important;
     }
 
     .d-xxl-block {
-        display: block;
+        display: block !important;
     }
 
     .d-xxl-flex {
-        display: flex;
+        display: flex !important;
     }
 
     .col-xxl {
@@ -1703,6 +1762,8 @@ a:hover {
     justify-content: space-between;
 }
 
+
+
 .order0 {
     order: 0;
 }
@@ -1784,18 +1845,46 @@ a:hover {
     height: 12rem;
 }
 
+.spacer-6 {
+    height: 6rem;
+}
+
+.spacer-5 {
+    height: 5rem;
+}
+
+.spacer-4 {
+    height: 4rem;
+}
+
+.spacer-3 {
+    height: 3rem;
+}
+
+.spacer-2 {
+    height: 2rem;
+}
+
+.spacer-1 {
+    height: 1rem;
+}
+
+
 /* =========Form========== */
+
+.form__overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
 
 .form {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 3.5rem 2rem;
     z-index: 5;
-    margin-left: 5.3rem;
-    max-width: 80vw;
-    background-color: var(--white-color-09);
+    margin: 0 auto;
 }
 
 .form__group {
@@ -2038,8 +2127,6 @@ a:hover {
 
 @media screen and (max-width: 768px) {
     .form {
-        margin-left: 0%;
-        padding: 2rem;
         gap: 1rem;
     }
 
@@ -2073,6 +2160,7 @@ a:hover {
         max-height: 400px;
         max-width: 100%;
     }
+   
 }
 
 @media screen and (max-width: 480px) {
