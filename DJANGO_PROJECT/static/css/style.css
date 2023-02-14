@@ -1201,7 +1201,7 @@ a:hover {
     flex-wrap: wrap;
     flex-direction: row !important;
     justify-content: center;
-    gap: 4rem 0rem;
+    gap: 2rem 2rem;
 }
 
 .col {
