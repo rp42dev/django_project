@@ -1,5 +1,27 @@
 
 (function ($) {
+
+    const scrollxElem = document.querySelectorAll('.scroll-x');
+
+    scrollxElem.forEach((scrollx) => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: scrollx,
+                start: 'top 80%',
+                end: '+=80%',
+                scrub: 2,
+                // markers: true,
+            }
+        })
+            .fromTo(scrollx, {
+                x: 100,
+            }, {
+                x: 0,
+                duration: 1,
+                ease: 'power4.out',
+            });
+    });
+
     const splitElements = document.querySelectorAll('.fade-left');
     const imageElemants = document.querySelectorAll('.fade-right');
 

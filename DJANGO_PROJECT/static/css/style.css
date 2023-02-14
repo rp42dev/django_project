@@ -1201,7 +1201,20 @@ a:hover {
     flex-wrap: wrap;
     flex-direction: row !important;
     justify-content: center;
+    gap: 4rem 0rem;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row !important;
     gap: 2rem 2rem;
+}
+
+.scroll-x {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 .col {
