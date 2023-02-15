@@ -1,6 +1,31 @@
 
 (function ($) {
 
+    // staggered animation cards
+    const staggeredElements = document.querySelectorAll('.card');
+
+    staggeredElements.forEach((staggeredElement) => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: staggeredElement,
+                start: 'top 80%',
+                end: '+=80%',
+                scrub: 2,
+                // markers: true,
+            }
+        })
+            .fromTo(staggeredElement, {
+                y: 100,
+                opacity: 0,
+            }, {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                stagger: 0.2,
+                ease: 'power4.out',
+            });
+    });
+
     const scrollxElem = document.querySelectorAll('.scroll-x');
 
     scrollxElem.forEach((scrollx) => {
