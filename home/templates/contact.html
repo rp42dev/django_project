@@ -1,6 +1,29 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block meta %}
+<meta name="description"
+    content="Learn more about me and my web design services. With years of experience in web design and development, I
+    am your go-to partner for creating a custom website that reflects your brand and attracts more customers.
+">
+<meta name="title" content="About Me - Your Partner in Web Design and Development">
+
+<meta property="og:title" content="Boost Your Online Presence with Responsive Design - Get in Touch Today!">
+<meta property="og:description"
+    content="Learn more about me and my web design services. With years of experience in web design and development, I am your go-to partner for creating a custom website that reflects your brand and attracts more customers.">
+
+<meta property="twitter:title" content="About Me - Your Partner in Web Design and Development">
+<meta property="twitter:description" content="Learn more about me and my web design services. With years of experience in web design and development, I am your go-to partner for creating a custom website that reflects your brand and attracts more customers.">
+
+<meta property="og:image" content="{% static 'img/dev.jpg' %}">
+
+<meta property="og:url" content="https://www.rp42.com/">
+<meta property="og:site_name" content="RP 42">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IE">
+<meta property="og:locale:alternate" content="en_US">
+{% endblock %}
+
 {% block title %}
 RP 42
 {% endblock %}
