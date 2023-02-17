@@ -1526,7 +1526,6 @@ a:hover {
 }
 
 @media screen and (min-width: 992px) {
-
     .d-none-lg {
         display: none !important;
     }
