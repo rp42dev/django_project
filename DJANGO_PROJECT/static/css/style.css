@@ -1270,7 +1270,7 @@ a:hover {
     flex-wrap: wrap;
     flex-direction: row !important;
     justify-content: center;
-    gap: 2rem 0rem;
+    gap: 2rem 0;
 }
 
 .row2 {
@@ -1456,9 +1456,6 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    .row {
-        gap: 4rem 0rem;
-    }
 
     .d-none-md {
         display: none !important;
@@ -2169,6 +2166,28 @@ a:hover {
     gap: 2rem;
     padding: 2rem 0rem;
     margin: auto;
+}
+
+/* ==========cards========= */
+
+.green-card {
+    background-image: url(../img/green-card.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+.green-mobile {
+    background-image: url(../img/green-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 100%;
+    width: 100%;
 }
 
 /* ==========How========== */
