@@ -4,24 +4,48 @@
     <div class="container">
       <div class="flex__column p-2 py-4 py-lg-6 p-sm-3">
         <div class="row flex__between">
-          <div class="col-12 flex__row">
-            <a href="mailto:rp42dv@gmail.com" class="white medium-text montserrat">rp42dev@gmail.com</a>
-            <a href="tel:085 785 3809" class="white medium-text montserrat">085 785 3809</a>
-            <div class="flex__row">
-              <a href="https://www.linkedin.com/in/rp42/" class="white inline__block">
+          <div class="col-12 col-sm-6 col-md-4 flex__column">
+            <h5 class="white">Contact</h5>
+            <ul class="list__none">
+              <li class="mb-2 list-unstyled">
+                <a href="mailto:rp42dv@gmail.com" class="white montserrat">rp42dev@gmail.com</a>
+              </li>
+              <li class="mb-2 list-unstyled">
+                <a href="tel:085 785 3809" class="white montserrat">085 785 3809</a>
+              </li>
+            </ul>
+            <div class="social__icons">
+              <a href="https://www.linkedin.com/in/rp42/" class="white">
                 <i class="fab fa-linkedin fa-2x"></i>
               </a>
-              <a href="https://github.com/rp42dev" class="white inline__block">
+              <a href="https://github.com/rp42dev" class="white">
                 <i class="fab fa-github fa-2x"></i>
               </a>
             </div>
           </div>
-        </div>
-        <div class="">
-          <p class="light">
-            @ 2023 - All rights reserved - <a href="https://rp42.cloud" class="white">rp42.cloud</a>
-          </p>
+
+          <div class="col-12 col-sm-6 col-md-4 flex__column">
+            <h5 class="white">Links</h5>
+            <ul class="list__none">
+              <li class="mb-2 list-unstyled">
+                <a href="{% url 'home' %}" class="white montserrat">Home</a>
+              </li>
+              <li class="mb-2 list-unstyled">
+                <a href="{% url 'about' %}" class="white montserrat">About</a>
+              </li>
+              <li class="mb-2 list-unstyled">
+                <a href="{% url 'contact' %}" class="white montserrat">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12">
+            <p class="light">
+              @ 2023 - All rights reserved - <a href="https://rp42.cloud" class="white">rp42.cloud</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 </section>

@@ -68,6 +68,10 @@ a {
     font-family: var(--primary-font);
 }
 
+.list-unstyled {
+    list-style: none;
+}
+
 .roboto {
     font-family: var(--primary-font);
 }
