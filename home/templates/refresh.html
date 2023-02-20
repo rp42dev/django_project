@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta name="description"
+    content="Is your website mobile-friendly? If not, you could be missing out on a huge chunk of potential customers. 
+    Contact me today to learn how I can help you stay ahead of the game with responsive design and ensure that your website is easily accessible and readable on a range of devices." />
+
+<meta name="title" content="Stay Ahead of the Game with Responsive Design - I'm Here to Help!">
+
+<meta property="og:title" content="Stay Ahead of the Game with Responsive Design - I'm Here to Help!">
+<meta property="og:description"
+    content="Is your website mobile-friendly? If not, you could be missing out on a huge chunk of potential customers. 
+Contact me today to learn how I can help you stay ahead of the game with responsive design and ensure that your website is easily accessible and readable on a range of devices.">
+
+<meta property="twitter:title" content="Stay Ahead of the Game with Responsive Design - I'm Here to Help!">
+<meta property="twitter:description"
+    content="Is your website mobile-friendly? If not, you could be missing out on a huge chunk of potential customers. 
+Contact me today to learn how I can help you stay ahead of the game with responsive design and ensure that your website is easily accessible and readable on a range of devices.">
+
+<meta property="og:image" content="{% static 'img/devices33.png' %}">
+
+<meta property="og:url" content="https://www.rp42.com/">
+<meta property="og:site_name" content="RP 42">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IE">
+<meta property="og:locale:alternate" content="en_US">
+{% endblock %}
+
+{% block title %}Responsive Web Design{% endblock %}
+
+{% block js %}
+<script defer src="{% static 'js/home.js' %}"></script>
+{% endblock %}
+
+{% block header %}
+<div class="spacer my-2"></div>
+<section id="hero">
+    <article class="container split relative">
+        <div class="p-2 py-3 p-sm-3 py-xl-4 split__content m-0 m-sm-3 my-0 mr-0 fade-left">
+            <h1 class="left header-text gray responsive_headline">Refactor Your Website for a Modern Look</h1>
+            <p class="large-text right">
+              Is your website feeling a bit outdated and in need of a refresh? Well, you're in luck, because I can help
+              you redesign your website to reflect the latest trends and standards for a modern look that's sure to
+              impress.</p>
+            <a href="#ensures" class="primary large-text">Learn More <i class="fas fa-arrow-down ml-2"></i></a>
+        </div>
+        <div class="split__img fade-right d-none d-md-block">
+            <img src="{% static 'img/devices33.png' %}" alt="Hero Image">
+        </div>
+    </article>
+</section>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section>
+    
+            {% include 'partials/refresh/featured-what.html' %}
+            {% include 'partials/refresh/featured-think.html' %}
+            {% include 'partials/refresh/featured-benefits.html' %}
+            {% include 'partials/refresh/contact.html' %}
+
+        <div class="spacer"></div>
+    </section>
+</div>
+{% endblock %}

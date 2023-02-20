@@ -36,4 +36,21 @@ def contact(request):
 
 def about(request):
     return render(request, 'about.html')
+
+
+def responsive_deign(request):
+    return render(request, 'responsive-design.html')
+
+
+def responsive_redesign(request):
+    return render(request, 'responsive-redesign.html')
+
+
+def refresh(request):
+    return render(request, 'refresh.html')
+
+
+def custom_development(request):
+    return render(request, 'custom-development.html')
+
              

@@ -4,35 +4,38 @@
 <section>
   <div class="container fade-left">
     <div class="flex__column">
-      <h2 class="px-2 px-md-4 gray left">My <span class="primary">Services</span></h2>
+      <h2 class="px-2 px-md-4 gray left">Some of my <span class="primary">Services</span>:</h2>
     </div>
     <div class="spacer-2"></div>
-    <div class=" row">
-      <div class="col-12 col-md-6 col-xl-4 text-center right">
-        <div class="flex__item p-2">
+    <div class="services row px-0 px-md-2 ">
+      <div class="col-12 col-md-6 col-xl-4 right">
+        <div class="flex__column p-2">
           <img src="{% static 'icons\icon_maximize_.svg' %}" alt="Linux" class="img-fluid">
-          <h4 class="dark">Responsive <span class="primary">Design</span>:</h4>
+          <h4 class="dark">Convert to <span class="primary">Responsive</span>:</h4>
           <p class="dark medium-text">Adapting the website to be responsive and accessible across different screen
             sizes.</p>
+            <a href="{% url 'responsive-redesign' %}" class="link-btn">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
 
-      <div class="col-12 col-md-6 col-xl-4 text-center right">
-        <div class="flex__item p-2">
+      <div class="col-12 col-md-6 col-xl-4 right">
+        <div class="flex__column p-2">
           <img src="{% static 'icons\icon_pen_tool_.svg' %}" alt="Python" class="img-fluid">
-          <h4 class="dark">Custom Web <span class="primary">Design</span>:</h4>
+          <h4 class="dark">Custom Web <span class="primary">Development</span>:</h4>
           <p class="dark medium-text">A unique and tailored website that reflects your brand's identity, values, and
             goals.</p>
-        </div>
+          <a href="{% url 'custom-development' %}" class="link-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4 text-center left">
-        <div class="flex__item p-2">
+      <div class="col-12 col-md-6 col-xl-4 left">
+        <div class="flex__column p-2">
           <img src="{% static 'icons\icon_edit_.svg' %}" alt="React" class="img-fluid">
-          <h4 class="dark">Website <span class="primary">Redesign</span>:</h4>
+          <h4 class="dark">Refresh your <span class="primary">Website</span>:</h4>
           <p class="dark medium-text"> A redesign of the website to reflect current trends and standards, for a modern
             look.</p>
+            <a href="{% url 'refresh' %}" class="link-btn">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>

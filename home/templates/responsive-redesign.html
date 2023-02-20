@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta name="description"
+    content="Is your website mobile-friendly? If not, you could be missing out on a huge chunk of potential customers. 
+    Contact me today to learn how I can help you stay ahead of the game with responsive design and ensure that your website is easily accessible and readable on a range of devices." />
+
+<meta name="title" content="Stay Ahead of the Game with Responsive Design - I'm Here to Help!">
+
+<meta property="og:title" content="Stay Ahead of the Game with Responsive Design - I'm Here to Help!">
+<meta property="og:description"
+    content="Is your website mobile-friendly? If not, you could be missing out on a huge chunk of potential customers. 
+Contact me today to learn how I can help you stay ahead of the game with responsive design and ensure that your website is easily accessible and readable on a range of devices.">
+
+<meta property="twitter:title" content="Stay Ahead of the Game with Responsive Design - I'm Here to Help!">
+<meta property="twitter:description"
+    content="Is your website mobile-friendly? If not, you could be missing out on a huge chunk of potential customers. 
+Contact me today to learn how I can help you stay ahead of the game with responsive design and ensure that your website is easily accessible and readable on a range of devices.">
+
+<meta property="og:image" content="{% static 'img/devices33.png' %}">
+
+<meta property="og:url" content="https://www.rp42.com/">
+<meta property="og:site_name" content="RP 42">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IE">
+<meta property="og:locale:alternate" content="en_US">
+{% endblock %}
+
+{% block title %}Responsive Web Design{% endblock %}
+
+{% block js %}
+<script defer src="{% static 'js/home.js' %}"></script>
+{% endblock %}
+
+{% block header %}
+<div class="spacer my-2"></div>
+<section id="hero">
+    <article class="container split relative">
+        <div class="p-2 py-3 p-sm-3 py-xl-4 split__content m-0 m-sm-3 my-0 mr-0 fade-left">
+            <h1 class="left header-text gray responsive_headline">Conver your website to a responsive design</h1>
+            <p class="large-text right">
+               Are you looking to take your website to the next level and attract more customers? Well, look no further!
+               I specialize in responsive web app design and develpment. I can help you transform your website into a
+               mobile-friendly site that's both stunning and functional.</p>
+            <a href="#services" class="btn scrollto">Read more <span class="btn__icon">⮷</span></a>
+        </div>
+        <div class="split__img fade-right d-none d-md-block">
+            <img src="{% static 'img/devices33.png' %}" alt="Hero Image">
+        </div>
+    </article>
+</section>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section>
+    
+            {% include 'partials/responsive-redesign/featured-what.html' %}
+            {% include 'partials/responsive-redesign/featured-think.html' %}
+            {% include 'partials/responsive-redesign/featured-why.html' %}
+            {% include 'partials/responsive-redesign/featured-benefits.html' %}
+            {% include 'partials/responsive-redesign/contact.html' %}
+
+        <div class="spacer"></div>
+    </section>
+</div>
+{% endblock %}

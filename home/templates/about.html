@@ -17,7 +17,7 @@
 
 <meta property="og:image" content="{% static 'img/dev.jpg' %}">
 
-<meta property="og:url" content="https://www.rp42.com/">
+<meta property="og:url" content="https://www.rp42.com/contact/">
 <meta property="og:site_name" content="RP 42">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_IE">
@@ -25,7 +25,7 @@
 {% endblock %}
 
 {% block title %}
-RP 42
+About - RP 42
 {% endblock %}
 
 {% block js %}
@@ -33,7 +33,22 @@ RP 42
 {% endblock %}
 
 {% block header %}
-{% include 'partials/about/hero.html' %}
+<div class="spacer my-2"></div>
+<section id="hero">
+    <div class="container split">
+        <div class="p-2 py-3 p-sm-3 py-xl-4 split__content m-0 m-sm-3 my-0 mr-0 fade-left">
+            <h1 class="left header-text gray responsive_headline">Hi I’m <span class=" primary">Raivis</span></h1>
+            <p class="large-text right">
+                I am a web app designer and developer based in Ireland,
+                I help businesses and individuals create custom websites that reflect their brand and attract more
+                customers.</p>
+            <a href="#goal" class="btn scrollto">Scroll to <span class="btn__icon">⮷</span></a>
+        </div>
+        <div class="split__img fade-right d-none d-md-block">
+            <img src="{% static 'img/dev.jpg' %}" alt="Hero Image">
+        </div>
+    </div>
+</section>
 {% endblock %}
 
 {% block content %}
