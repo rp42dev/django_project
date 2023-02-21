@@ -2259,7 +2259,6 @@ a:hover {
     max-height: 900px;
     display: grid;
     place-items: center;
-    background-color: var(--primary-color);
     top: 0;
     right: 0;
     z-index: 1;

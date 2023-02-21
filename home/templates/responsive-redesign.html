@@ -2,20 +2,17 @@
 {% load static %}
 
 {% block meta %}
-<meta name="description"
-    content="Are you looking to take your website to the next level and attract more customers? Well, look no further!
+<meta name="description" content="Are you looking to take your website to the next level and attract more customers? Well, look no further!
     I specialize in responsive web app design and develpment." />
 
 <meta name="title" content="Convert your website to a responsive design - I'm Here to Help!">
 
 <meta property="og:title" content="Convert your website to a responsive design - I'm Here to Help!">
-<meta property="og:description"
-    content="Are you looking to take your website to the next level and attract more customers? Well, look no further!
+<meta property="og:description" content="Are you looking to take your website to the next level and attract more customers? Well, look no further!
     I specialize in responsive web app design and develpment.">
 
 <meta property="twitter:title" content="Convert your website to a responsive design - I'm Here to Help!">
-<meta property="twitter:description"
-    content="Are you looking to take your website to the next level and attract more customers? Well, look no further!
+<meta property="twitter:description" content="Are you looking to take your website to the next level and attract more customers? Well, look no further!
     I specialize in responsive web app design and develpment.">
 
 <meta property="og:image" content="{% static 'img/devices33.png' %}">
@@ -39,10 +36,10 @@
         <div class="p-2 py-3 p-sm-3 py-xl-4 split__content m-0 m-sm-3 my-0 mr-0 fade-left">
             <h1 class="left header-text gray responsive_headline">Conver your website to a responsive design</h1>
             <p class="large-text right">
-               Are you looking to take your website to the next level and attract more customers? Well, look no further!
-               I specialize in responsive web app design and develpment. I can help you transform your website into a
-               mobile-friendly site that's both stunning and functional.</p>
-            <a href="#services" class="btn scrollto">Read more <span class="btn__icon">⮷</span></a>
+                Are you looking to take your website to the next level and attract more customers? Well, look no
+                further! I specialize in responsive web app design and develpment.</p>
+            <a href="#what" class="primary btn-outline large-text">Learn More <i
+                    class="fas fa-arrow-down ml-2"></i></a>
         </div>
         <div class="split__img fade-right d-none d-md-block">
             <img src="{% static 'img/devices33.png' %}" alt="Hero Image">
@@ -54,12 +51,13 @@
 {% block content %}
 <div class="container">
     <section>
-    
-            {% include 'partials/responsive-redesign/featured-what.html' %}
-            {% include 'partials/responsive-redesign/featured-think.html' %}
-            {% include 'partials/responsive-redesign/featured-why.html' %}
-            {% include 'partials/responsive-redesign/featured-benefits.html' %}
-            {% include 'partials/responsive-redesign/contact.html' %}
+
+        {% include 'partials/responsive-redesign/featured-why.html' %}
+        {% include 'partials/responsive-redesign/featured-what.html' %}
+        {% include 'partials/responsive-redesign/featured-will.html' %}
+        {% include 'partials/responsive-redesign/featured-benefits.html' %}
+        {% include 'partials/responsive-redesign/featured-work.html' %}
+        {% include 'partials/responsive-redesign/contact.html' %}
 
         <div class="spacer"></div>
     </section>

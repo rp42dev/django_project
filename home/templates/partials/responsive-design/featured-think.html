@@ -1,17 +1,22 @@
 {% load static %}
 
-<div class="spacer"></div>
-<section>
-  <div class="container fade-right row">
-      <article class="px-2 px-md-4 col-12 col-md-10">
-        <h2 class="dark left">Think about it... </h2>
-                    <div class="spacer-2"></div>
-        <p class="dark large-text left">
-            You're on the go, checking out a website on your phone, and all of a sudden the
-            font is too small, the images don't load, and you find yourself scrolling up, down, left, and
-            right just to read a paragraph. It's frustrating, right? Now, imagine that's your website. Not a
-            good look.
-        </p>
-      </article>
-  </div>
+<div class="spacer my-2"></div>
+<section id="hero">
+  <article class="container split relative">
+    <div class="p-2 py-3 p-sm-3 py-xl-4 split__content m-0 m-sm-3 my-0 mr-0 fade-left">
+      <h1 class="left header-text gray responsive_headline">Think about it...
+      </h1>
+      <p class="large-text right">
+         You're on the go, checking out a website on your phone, and all of a sudden the
+         font is too small, the images don't load, and you find yourself scrolling up, down, left, and
+         right just to read a paragraph. It's frustrating, right? That's where I come in.
+      </p>
+          <a href="#help" class="primary btn-outline large-text">Learn More <i
+              class="fas fa-arrow-down"></i></a>
+
+    </div>
+    <div class="split__img fade-right d-none d-md-block">
+      <img src="{% static 'img/header.jpg' %}" alt="Hero Image">
+    </div>
+  </article>
 </section>
