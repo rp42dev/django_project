@@ -2,14 +2,17 @@
 {% load static %}
 
 {% block meta %}
-<meta name="description" content="">
-<meta name="title" content="">
+<meta name="description" content="Make your website mobile-friendly with a responsive design and attract more customers to your website. 
+    Contact me today to learn more about my web design services and how I can help you stay ahead of the game.">
+<meta name="title" content="Boost Your Online Presence with Responsive Design - Get in Touch Today!">
 
-<meta property="og:title" content="">
-<meta property="og:description" content="">
+<meta property="og:title" content="Boost Your Online Presence with Responsive Design - Get in Touch Today!">
+<meta property="og:description" content="Make your website mobile-friendly with a responsive design and attract more customers to your website. 
+    Contact me today to learn more about my web design services and how I can help you stay ahead of the game.">
 
-<meta property="twitter:title" content="">
-<meta property="twitter:description" content="">
+<meta property="twitter:title" content="Boost Your Online Presence with Responsive Design - Get in Touch Today!">
+<meta property="twitter:description" content="Make your website mobile-friendly with a responsive design and attract more customers to your website. 
+    Contact me today to learn more about my web design services and how I can help you stay ahead of the game.">
 
 <meta property="og:image" content="{% static 'img/devices33.png' %}">
 
@@ -29,10 +32,33 @@ RP 42
 {% endblock %}
 
 {% block header %}
+<div class="spacer my-2"></div>
+<section id="hero">
+    <article class="container split relative">
+        <div class="p-2 py-3 p-sm-3 py-xl-4 split__content m-0 m-sm-3 my-0 mr-0 fade-left">
+            <h1 class="left header-text gray responsive_headline">Hi, I'm Raivis, a Web Developer and Designer
+            </h1>
+            <p class="large-text right">
+                As a web developer, my goal is to make sure that everyone can access and enjoy the websites I create.
+            </p>
+            <a href="#specialize" class="btn scrollto">read more <span class="btn__icon">⮷</span></a>
 
+        </div>
+        <div class="split__img fade-right d-none d-md-block">
+            <img src="{% static 'img/header.jpg' %}" alt="Hero Image">
+        </div>
+    </article>
+</section>
 {% endblock %}
 
 {% block content %}
-
+{% include 'partials/home/featured-specialize.html' %}
+{% include 'partials/home/featured-devices.html' %}
+{% include 'partials/home/featured-focus.html' %}
+{% include 'partials/home/featured-benefits.html' %}
+{% include 'partials/home/featured-cards.html' %}
+{% include 'partials/home/featured-whether.html' %}
+{% include 'partials/home/featured-testimonials.html' %}
+{% include 'partials/home/contact.html' %}
 <div class="spacer"></div>
 {% endblock %}

@@ -1949,6 +1949,27 @@ a:hover {
 .order4 {
     order: 4;
 }
+@media screen and (max-width: 480px) {
+    .order0-sm {
+        order: 0;
+    }
+
+    .order1-sm {
+        order: 1;
+    }
+
+    .order2-sm {
+        order: 2;
+    }
+
+    .order3-sm {
+        order: 3;
+    }
+
+    .order4-sm {
+        order: 4;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .order0-md {
@@ -1972,28 +1993,30 @@ a:hover {
     }
 }
 
-
-@media screen and (max-width: 480px) {
-    .order0-sm {
+@media screen and (max-width: 992px) {
+    .order0-lg {
         order: 0;
     }
 
-    .order1-sm {
+    .order1-lg {
         order: 1;
     }
 
-    .order2-sm {
+    .order2-lg {
         order: 2;
     }
 
-    .order3-sm {
+    .order3-lg {
         order: 3;
     }
 
-    .order4-sm {
+    .order4-lg {
         order: 4;
     }
 }
+
+
+
 
 .pt-0 {
     padding-top: 0rem;

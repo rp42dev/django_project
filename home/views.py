@@ -43,14 +43,17 @@ def responsive_deign(request):
 
 
 def responsive_redesign(request):
-    return render(request, 'responsive-redesign.html')
+    return render(request, 'services/responsive-redesign.html')
 
 
 def refresh(request):
-    return render(request, 'refresh.html')
+    return render(request, 'services/refresh.html')
 
 
 def custom_development(request):
-    return render(request, 'custom-development.html')
+    return render(request, 'services/custom-development.html')
+
+def fromladstodads(request):
+    return render(request, 'fromladstodads.html')
 
              
