@@ -2,7 +2,7 @@
     <div class="container contact">
         <div id="form" class="row">
             <div class="col-12 col-md-6">
-                <p class="medium-text form-text p-0 pr-md-4 right">
+                <p class="medium-text form-text p-0 pr-md-4 ">
                     If you have a project that you would like to discuss, get in touch. I am always happy to hear from
                     you.
 
@@ -20,14 +20,14 @@
             <div class="form__overlay col-12 col-md-6">
                 <form action="" method="post" class="form">
                     {% csrf_token %}
-                    <div class="form__group left">
+                    <div class="form__group">
                         <input type="text" name="name" class="form__input" placeholder="Your name" id="name" required>
                     </div>
-                    <div class="form__group right">
+                    <div class="form__group">
                         <input type="email" name="email" class="form__input" placeholder="Your email" id="email"
                             required>
                     </div>
-                    <div class="form__group left">
+                    <div class="form__group">
                         <textarea name="message" class="form__input" placeholder="Your message" id="message"
                             required></textarea>
                     </div>
