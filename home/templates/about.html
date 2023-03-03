@@ -2,20 +2,19 @@
 {% load static %}
 
 {% block meta %}
-<meta name="description" content="Learn more about me and my web design services. With years of experience in web design and development, I
-    am your go-to partner for creating a custom website that reflects your brand and attracts more customers.
+<meta name="description" content="I am a full-stack software developer located in Ireland. My aim is to develop websites and applications that are user-friendly, with a focus on cross-device compatibility and responsive design.
 ">
 <meta name="title" content="About Me - Your Partner in Web Design and Development">
 
-<meta property="og:title" content="Boost Your Online Presence with Responsive Design - Get in Touch Today!">
+<meta property="og:title" content="About Me - Your Partner in Web Design and Development">
 <meta property="og:description"
-    content="Learn more about me and my web design services. With years of experience in web design and development, I am your go-to partner for creating a custom website that reflects your brand and attracts more customers.">
+    content="I am a full-stack software developer located in Ireland. My aim is to develop websites and applications that are user-friendly, with a focus on cross-device compatibility and responsive design." />
 
 <meta property="twitter:title" content="About Me - Your Partner in Web Design and Development">
 <meta property="twitter:description"
-    content="Learn more about me and my web design services. With years of experience in web design and development, I am your go-to partner for creating a custom website that reflects your brand and attracts more customers.">
+    content="I am a full-stack software developer located in Ireland. My aim is to develop websites and applications that are user-friendly, with a focus on cross-device compatibility and responsive design." />
 
-<meta property="og:image" content="{% static 'img/dev.jpg' %}">
+<meta property="og:image" content="{% static 'img/pic.webp' %}">
 
 <meta property="og:url" content="https://www.rp42.com/contact/">
 <meta property="og:site_name" content="RP 42">
@@ -37,15 +36,15 @@ About - RP 42
 <section id="hero">
     <div class="container split">
         <div class="py-2 py-lg-3 split__content m-0 m-sm-3 my-0 mr-0 fade-left">
-            <h1 class="left header-text gray responsive_headline">Hi I’m <span class=" primary">Raivis</span></h1>
+            <h1 class="left header-text gray responsive_headline">Hi there, I'm <span class="primary">Raivis</span></h1>
             <p class="large-text right">
-                I am a web app developer based in Ireland,
-                I create websites and web apps that are responsive and mobile friendly.
+                I am a full-stack software developer located in Ireland. My aim is to develop websites and applications that are
+                user-friendly, with a focus on cross-device compatibility and responsive design.
             </p>
             <a href="#goal" class="primary btn-outline large-text">read more <i class="fas fa-arrow-down ml-2"></i></a>
         </div>
-        <div class="split__img fade-right d-none d-md-block">
-            <img src="{% static 'img/staggered.webp' %}" alt="Hero Image">
+        <div class="split__img d-none d-md-block">
+            <img src="{% static 'img/pic.webp' %}" alt="Hero Image">
         </div>
     </div>
 </section>
@@ -54,6 +53,7 @@ About - RP 42
 {% block content %}
 {% include 'partials/about/featured-goal.html' %}
 {% include 'partials/about/featured-who.html' %}
+{% include 'partials/about/featured-win.html' %}
 {% include 'partials/featured/featured-how.html' %}
 {% include 'partials/featured/featured-whether2.html' %}
 {% include 'partials/featured/featured-contact.html' %}
