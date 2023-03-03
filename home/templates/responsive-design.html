@@ -37,16 +37,17 @@ Contact me today to learn how I can help you stay ahead of the game with respons
 <div class="spacer my-2"></div>
 <section id="hero">
     <article class="container split relative">
-        <div class="p-2 py-3 p-sm-3 py-xl-4 split__content m-0 m-sm-3 my-0 mr-0 fade-left">
-            <h1 class="left header-text gray responsive_headline">Responsive Web Design what is it?</h1>
-            <p class="large-text right">
-               Where having a mobile-friendly website is as essential as
-               having a cup of coffee in the morning. With more than half of internet traffic coming from mobile
-               devices, it's no longer a question of whether or not you need a mobile-friendly website - it's a
-               must-have.</p>
-            <a href="#ensures" class="primary btn-outline large-text">Learn More <i class="fas fa-arrow-down ml-2"></i></a>
+        <div class="py-2 py-lg-3 split__content m-0 m-sm-3 my-0 mr-0 ">
+            <h1 class="header-text gray responsive_headline">Responsive Web <span class="primary">Design</span></h1>
+            <p class="large-text">
+                Where having a mobile-friendly website is as essential as
+                having a cup of coffee in the morning. With more than half of internet traffic coming from mobile
+                devices, it's no longer a question of whether or not you need a mobile-friendly website - it's a
+                must-have.</p>
+            <a href="#ensures" class="primary btn-outline large-text">Learn More <i
+                    class="fas fa-arrow-down ml-2"></i></a>
         </div>
-        <div class="split__img fade-right d-none d-md-block">
+        <div class="split__img">
             <img src="{% static 'img/devices3.webp' %}" alt="Hero Image">
         </div>
     </article>
@@ -54,15 +55,8 @@ Contact me today to learn how I can help you stay ahead of the game with respons
 {% endblock %}
 
 {% block content %}
-<div class="container">
-    <section>
-    
-            {% include 'partials/responsive-design/featured-what.html' %}
-            {% include 'partials/responsive-design/featured-think.html' %}
-            {% include 'partials/responsive-design/featured-why.html' %}
-            {% include 'partials/contact/featured-contact.html' %}
-
-        <div class="spacer"></div>
-    </section>
-</div>
+{% include 'partials/responsive-design/featured-what.html' %}
+{% include 'partials/responsive-design/featured-think.html' %}
+{% include 'partials/featured/featured-focus.html' %}
+{% include 'partials/featured/featured-contact.html' %}
 {% endblock %}

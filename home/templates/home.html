@@ -31,21 +31,21 @@ RP 42
 {% endblock %}
 
 {% block js %}
-<script defer src="{% static 'js/home.js' %}"></script>
+<script defer src="{% static 'js/featured.js' %}"></script>
 {% endblock %}
 
 {% block header %}
 <div class="spacer my-2"></div>
 <section id="hero">
     <article class="container split relative">
-        <div class="p-2 py-3 p-sm-3 py-xl-4 split__content m-0 m-sm-3 my-0 mr-0 fade-left">
-            <h1 class="left header-text gray responsive_headline">Hi, I'm Raivis, a Web app Developer
+        <div class="py-2 py-lg-3 split__content m-0 m-sm-3 my-0 mr-0 fade-left">
+            <h1 class="left header-text gray responsive_headline">Responsive Web Design and <span class="primary">Development</span>
             </h1>
             <p class="large-text right">
                 As a web developer, my goal is to make sure that everyone can access and enjoy the websites I create.
             </p>
-            <a href="#specialize" class="btn scrollto">read more <span class="btn__icon">⮷</span></a>
-
+            <a href="#specialize" class="primary btn-outline large-text">Learn More <i
+                    class="fas fa-arrow-down ml-2"></i></a>
         </div>
         <div class="split__img fade-right d-none d-md-block">
             <img src="{% static 'img/hero.webp' %}" alt="Hero Image">
@@ -55,13 +55,12 @@ RP 42
 {% endblock %}
 
 {% block content %}
-{% include 'partials/home/featured-specialize.html' %}
-{% include 'partials/home/featured-devices.html' %}
-{% include 'partials/home/featured-focus.html' %}
-{% include 'partials/about/featured-how.html' %}
+{% include 'partials/featured/featured-specialize.html' %}
+{% include 'partials/featured/featured-devices.html' %}
+{% include 'partials/featured/featured-focus.html' %}
+{% include 'partials/featured/featured-how.html' %}
 {% include 'partials/home/featured-projects.html' %}
-{% include 'partials/home/featured-testimonials.html' %}
-{% include 'partials/home/featured-whether.html' %}
-{% include 'partials/contact/featured-contact.html' %}
-<div class="spacer"></div>
+{% include 'partials/featured/featured-testimonials.html' %}
+{% include 'partials/featured/featured-whether.html' %}
+{% include 'partials/featured/featured-contact.html' %}
 {% endblock %}
