@@ -35,15 +35,15 @@ About - RP 42
 <div class="spacer my-2"></div>
 <section id="hero">
     <div class="container split">
-        <div class="py-2 py-lg-3 split__content m-0 m-sm-3 my-0 mr-0 fade-left">
+        <div class="p-2 p-lg-3 split__content m-0 m-sm-3 my-0 mr-0 fade-left">
             <h1 class="left header-text gray responsive_headline">Hi there, I'm <span class="primary">Raivis</span></h1>
             <p class="large-text right">
                 I am a full-stack software developer located in Ireland. My aim is to develop websites and applications that are
                 user-friendly, with a focus on cross-device compatibility and responsive design.
             </p>
-            <a href="#goal" class="primary btn-outline large-text">read more <i class="fas fa-arrow-down ml-2"></i></a>
+            <a href="#goal" class="primary btn-outline large-text d-none d-lg-block">read more <i class="fas fa-arrow-down ml-2"></i></a>
         </div>
-        <div class="split__img d-none d-md-block">
+        <div class="split__img">
             <img src="{% static 'img/pic.webp' %}" alt="Hero Image">
         </div>
     </div>
@@ -54,7 +54,8 @@ About - RP 42
 {% include 'partials/about/featured-goal.html' %}
 {% include 'partials/about/featured-who.html' %}
 {% include 'partials/about/featured-win.html' %}
-{% include 'partials/featured/featured-how.html' %}
+{% include 'partials/about/featured-work.html' %}
+{% include 'partials/featured/featured-testimonials.html' %}
 {% include 'partials/featured/featured-whether2.html' %}
 {% include 'partials/featured/featured-contact.html' %}
 {% endblock %}

@@ -1928,7 +1928,6 @@ a:hover {
     flex-shrink: 0;
 }
 
-
 .grid-center {
     display: grid;
     place-items: center;
@@ -2469,13 +2468,13 @@ a:hover {
     .split__img {
         position: relative;
         max-width: 100%;
-        height: 50vh;
+        height: 70vh;
         max-height: 400px;
         z-index: 1;
     }
 
     .split__img img {
-        height: 50vh;
+        height: 70vh;
         max-height: 400px;
         max-width: 100%;
     }
