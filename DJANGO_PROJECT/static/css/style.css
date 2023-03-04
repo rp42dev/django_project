@@ -2432,7 +2432,8 @@ a:hover {
 
     .split {
         position: relative;
-        height: auto;
+        height: 100%;
+        max-height: 100%;
         margin-top: 0%;
 
     }
