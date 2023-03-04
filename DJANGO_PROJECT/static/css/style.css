@@ -678,6 +678,7 @@ a:hover {
     .pr-md-4 {
         padding-right: 4rem;
     }
+
     .pr-md-2 {
         padding-right: 2rem;
     }
@@ -689,6 +690,7 @@ a:hover {
     .pl-md-4 {
         padding-left: 4rem;
     }
+
     .m-sm {
         margin: 1rem;
     }
@@ -1367,7 +1369,7 @@ a:hover {
     flex-wrap: nowrap;
     flex-direction: row !important;
     gap: 2rem 2rem;
-    
+
 }
 
 
@@ -1932,6 +1934,7 @@ a:hover {
 .order4 {
     order: 4;
 }
+
 @media screen and (max-width: 480px) {
     .order0-sm {
         order: 0;
@@ -2089,8 +2092,8 @@ a:hover {
 }
 
 .form__textarea {
-  min-height: 150px;
-  margin-bottom: 2rem;
+    min-height: 150px;
+    margin-bottom: 2rem;
 }
 
 .form__textarea:focus {
@@ -2272,7 +2275,7 @@ a:hover {
 }
 
 .feature-text {
-   padding-bottom: 4rem;
+    padding-bottom: 4rem;
 }
 
 .image__feature {
@@ -2286,7 +2289,7 @@ a:hover {
     max-width: 1980px;
     height: auto;
     object-fit: cover;
-    transform-origin: center;    
+    transform-origin: center;
 }
 
 
@@ -2394,7 +2397,7 @@ a:hover {
 
 @media screen and (max-width: 960px) {
     .testimonials .testimonial__item {
-        height: 450px;
+        height: 550px;
         min-width: 300px;
         max-width: 500px;
     }
@@ -2404,8 +2407,9 @@ a:hover {
     }
 
     .testimonials .testimonial__item .flex__column {
-        height: 450px;
+        height: 550px;
     }
+
     .tech img {
         width: 150px;
         height: 150px;
@@ -2422,6 +2426,7 @@ a:hover {
         width: 100px;
         height: 100px;
     }
+
     #how {
         gap: 0rem;
     }
@@ -2457,7 +2462,15 @@ a:hover {
         max-height: 400px;
         max-width: 100%;
     }
-   
+
+    .testimonials .testimonial__item {
+        height: 450px;
+    }
+
+    .testimonials .testimonial__item .flex__column {
+        height: 450px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
