@@ -1361,7 +1361,6 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row !important;
-    justify-content: center;
     gap: 2rem 0;
 }
 
@@ -2120,7 +2119,9 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    max-width: 220px;
+    max-width: 250px;
+    width: fit-content;
+    width: max-content;
     color: var(--black-color);
     background-color: var(--primary-color);
     border: solid 1px var(--primary-color);
@@ -2269,7 +2270,7 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    width: 55%;
+    width: 50%;
     z-index: 2;
     backdrop-filter: blur(5px);
 }
@@ -2277,7 +2278,7 @@ body{
 .split__img {
     position: absolute;
     width: 100%;
-    max-width: 55%;
+    max-width: 50%;
     height: 100vh;
     max-height: 700px;
     display: grid;
