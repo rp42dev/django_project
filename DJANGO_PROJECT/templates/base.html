@@ -43,11 +43,11 @@
     {% include 'partials/nav.html' %}
     {% endblock %}
 
-    <header class="bg">
+    <header>
         {% block header %}
         {% endblock %}
     </header>
-
+    
     {% if messages %}
     {% for message in messages %}
     <div class="message">
@@ -55,15 +55,18 @@
     </div>
     {% endfor %}
     {% endif %}
-
-
+    
+    
     <div class="x-hidden">
         {% block content %}
         {% endblock %}
     </div>
+
+    <div class="bg"></div>
+
     {% block footer %}
     {% endblock %}
-
+    
     {% block postload_js %}
     {% endblock %}
     {% include 'partials/featured/featured-tech.html' %}
