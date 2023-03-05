@@ -31,8 +31,7 @@
     box-sizing: border-box;
 }
 
-html,
-body {
+html {
     background-color: var(--black-color);
     max-width: 100vw;
     overflow-x: hidden;
@@ -2077,7 +2076,6 @@ a:hover {
     font-weight: 400;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
-    border-radius: 0.5rem;
     transition: all 0.3s ease-in-out;
 }
 
@@ -2225,6 +2223,7 @@ a:hover {
 /* ========Hero========= */
 
 /* Overlap by 20% hero content over hero img using grid */
+
 
 .split {
     position: relative;
