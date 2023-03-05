@@ -1,41 +1,65 @@
+{% load static %}
 <div class="">
     <div class="spacer"></div>
     <div class="container contact">
-        <article id="how" class="row bg-gray9 py-3">
-            <div class="col-12 col-md-6 p-2 p-md-3 justify-column-center">
-                <h2 class="light"> How I Can <span class="primary">Help</span></h2>
+        <article id="how" class="row bg-gray9 px-2 px-lg-2 py-6">
+            <div class="col-12 col-lg-6  justify-column-center mx-0 px-sm-1">
+                <h2 class="light"> Working with<span class="primary"> me</span></h2>
                 <div class="spacer-2"></div>
-                <p class="light large-text right">
-                    I can help you with variety of web design and development services. I can help you with the following:
+                <p class="light medium-text">
+                    Whether you want a clean and minimalistic look or something more bold and eye-catching, I
+                    can create a design that's tailored to your brand and your audience.
                 </p>
+                <div class="spacer-2 d-block d-none-lg"></div>	
             </div>
-            <div class="col-12 col-md-6 p-2 p-md-3 justify-column-center">
-                
-                <ul class="list-unstyled">
-                    <li class="light form-text right">
-                        <i class="fas fa-check"></i> Building a website that is easy to navigate and provides a 
-                        great user experience.
-                    </li>
-                    <li class="light form-text right">
-                        <i class="fas fa-check"></i> Rebuiding your existing website to make it mobile-friendly and user-friendly.
-                    </li>
-                    <li class="light form-text right">
-                        <i class="fas fa-check"></i> Creating a custom design that reflects your brand and attracts
-                        more customers.
-                    </li>
-                    <li class="light form-text right">
-                        <i class="fas fa-check"></i> Using responsive design techniques to ensure that your website 
-                        functions well on any device
-                    </li>
-                    <li class="light form-text right">
-                        <i class="fas fa-check"></i> Providing ongoing support and maintenance to ensure that your
-                        website remains up-to-date.
-                    </li>
-                    <li class="light form-text right">
-                        <i class="fas fa-check"></i> Ensure SEO best practices are implemented to help your website 
-                        rank higher in search engines.
-                    </li>
-                </ul>
+            <div class="col-12 col-lg-6 justify-column-center">
+
+                <div class="row">
+                    <div class="col-12 col-sm-6 light form-text mx-0 px-sm-1">
+                        <div class="flex__row icon-sm">
+                            <img src="{% static 'icons\icon_users_.svg' %}" alt="Users">
+                            <h6 class="light">User Experience</h6>
+                        </div>
+                        <p class="py-1">
+                            I prioritize user experience,
+                            ensuring that your website is
+                            easy to navigate and enjoyable to use.</p>
+                    </div>
+                    <div class="col-12 col-sm-6 light form-text icon-sm mx-0 px-sm-1">
+                        <div class="flex__row icon-sm">
+                            <img src="{% static 'icons\icon_pen_tool_.svg' %}" alt="Users">
+                            <h6 class="light">Custom Design</h6>
+                        </div>
+                        <p class="py-1">
+                            I create custom designs that capture your brand's
+                            personality and reflect your business goals.
+                        </p>
+                    </div>
+                </div>
+                <div class="spacer-2"></div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 light form-text icon-sm mx-0 px-sm-1">
+                        <div class="flex__row icon-sm">
+                            <img src="{% static 'icons\icon_maximize_.svg' %}" alt="Users">
+                            <h6 class="light">Responsive Design</h6>
+                        </div>
+                        <p class="py-1">
+                            I use responsive design techniques to ensure that your
+                            website functions flawlessly on any device.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-sm-6 light form-text icon-sm mx-0 px-sm-1">
+                        <div class="flex__row icon-sm">
+                            <img src="{% static 'icons\icon_search_.svg' %}" alt="Users">
+                            <h6 class="light">SEO best practices</h6>
+                        </div>
+                        <p class="py-1">
+                            I implement SEO best practices to help your website rank
+                            higher in search engine results.
+                        </p>
+                    </div>
+                </div>
             </div>
         </article>
     </div>
