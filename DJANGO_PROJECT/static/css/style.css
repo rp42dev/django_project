@@ -2237,13 +2237,23 @@ a:hover {
 }
 
 .icon img {
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .icon-sm img {
     width: 3rem;
     height: 3rem;
+}
+
+.icon-xs img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.icon-btn img {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 /* ========Hero========= */
@@ -2433,6 +2443,8 @@ body{
     height: 100px;
 }
 
+/* =========Icons Links======= */
+
 /* =========Media Queries========= */
 
 @media screen and (max-width: 960px) {
@@ -2450,11 +2462,6 @@ body{
         height: 550px;
     }
 
-    .tech img {
-        width: 150px;
-        height: 150px;
-    }
-
     .large-text {
         font-size: 1.6rem;
     }
@@ -2462,10 +2469,7 @@ body{
 
 
 @media screen and (max-width: 768px) {
-    .tech img {
-        width: 100px;
-        height: 100px;
-    }
+
 
     #how {
         gap: 0rem;
