@@ -97,4 +97,3 @@ $(window).on('load', function () {
 
     ScrollTrigger.refresh();
 })(jQuery);
-

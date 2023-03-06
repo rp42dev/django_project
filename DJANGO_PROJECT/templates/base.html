@@ -31,7 +31,7 @@
 
     <script defer src="{% static 'js/fit-text.js' %}"></script>
     <script defer src="{% static 'js/curtains.umd.min.js' %}"></script>
-    <script defer src="{% static 'js/script.js' %}"></script>
+    
 
     {% block js %}
     {% endblock %}
@@ -71,6 +71,7 @@
     
     {% block postload_js %}
     {% endblock %}
+    <script src="{% static 'js/script.js' %}"></script>
 
 </body>
 
