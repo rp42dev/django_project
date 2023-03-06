@@ -2378,6 +2378,16 @@ body{
     margin: auto;
 }
 
+.marquee__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.marquee__text {
+    display: inline-block;
+}
+
+
 
 /* ==========cards========= */
 
