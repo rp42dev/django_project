@@ -1,18 +1,17 @@
 
 (function ($) {
-    // marquee animation from https://codepen.io/lelamanolio/pen/ZEYRJJJ
+
     let marquee = document.querySelectorAll('.marquee__text');
 
     // added event listener because it doesn't get the right width
-
     marquee.forEach(el => {
         // set a default rate, the higher the value, the faster it is
-        let rate = 100;
+        let rate = 200;
         // get the width of the element
-        let distance = el.offsetWidth;
+        let distance = el.clientWidth;
         // get the margin-right of the element
         let style = window.getComputedStyle(el);
-        let marginRight = parseInt(style.marginRight) || 8;
+        let marginRight = parseInt(style.marginRight) || 0;
         // get the total width of the element
         let totalDistance = distance + marginRight;
         // get the duration of the animation 
