@@ -313,6 +313,38 @@ a:hover {
     text-align: center;
 }
 
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .text-sm-center {
+        text-align: center;
+    }
+
+    .text-sm-left {
+        text-align: left;
+    }
+
+    .text-sm-right {
+        text-align: right;
+    }
+
+    .text-sm-justify {
+        text-align: justify;
+    }
+}
+    
+
+
 /* ========Colors========= */
 
 .primary {
@@ -3208,7 +3240,6 @@ body {
 
 
 @media screen and (max-width: 768px) {
-
 
     #how {
         gap: 0rem;

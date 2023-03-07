@@ -21,8 +21,8 @@ $(window).on('load', function () {
     marquee.forEach(el => {
 
         let text = el.innerHTML;
-        el.innerHTML = text + text + text;
         let textWidth = el.scrollWidth;
+        el.innerHTML = text + text;
         let textSpeed = el.getAttribute('data-speed');
 
         let textDirection = el.getAttribute('data-direction');

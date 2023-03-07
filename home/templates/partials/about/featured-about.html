@@ -1,11 +1,13 @@
 {% load static %}
 
 <div id="goal" class="spacer"></div>
-<section class="container">
-  <div class="flex__column px-2 px-sm-3 col-12 col-md-10 mx-auto">
+<section class="container text-center text-sm-left">
+  <div class="flex__column px-2 px-md-3 col-12 col-lg-10 mx-auto">
     <h2 class="">My journey to <span class="primary">Tech</span></h2>
-    <p class="light large-text">
+    <p class="light medium-text">
       Technology has always fascinated me and interested in understanding how things work. My journey in the technology
-      field began in 2008, and I have completed various IT courses, including Operating Systems, Networking.</p>      
+      field began in 2008, and I have completed various IT courses, including Operating Systems, Networking.</p>
+      
+      {% include 'partials/corses.html' %}
   </div>
 </section>
