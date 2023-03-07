@@ -14,7 +14,7 @@ $(window).on('load', function () {
     jQuery(".responsive_headline").fitText(1.2, { minFontSize: '43px', maxFontSize: '50px' });
 });
 
-(function ($) {
+$(window).on('load', function () {
 
     let marquee = document.querySelectorAll('.marquee__text');
 
@@ -102,4 +102,4 @@ $(window).on('load', function () {
 
 
     ScrollTrigger.refresh();
-})(jQuery);
+});
