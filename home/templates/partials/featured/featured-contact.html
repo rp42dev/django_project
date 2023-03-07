@@ -1,18 +1,16 @@
 {% load static %}
 <div class="spacer"></div>
 <section>
-    <div class="container contact px-2 px-md-4">
+    <div class="container contact px-0 px-lg-1">
       <div id="form" class="row">
-        <div class="col-12 col-md-6 flex__column">
+        <div class="col-12 col-md-6 flex__column px-2">
           <h1 class="Light ">Let's Get <span class=" primary">Started</span></h1>
-          <p class="medium-text form-text p-0 pr-md-4 ">
+          <p class="medium-text form-text">
             If you have a project that you would like to discuss, get in touch. I am always happy to hear from
-            you.
-
-            You can fill out the form or contact me on LinkedIn or GitHub below.</p>
-         {% include 'partials/links.html' %}
+            you. You can fill out the form or contact me on LinkedIn or GitHub below.</p>
+         {% include 'partials/links2.html' %}
         </div>
-        <div class="form__overlay col-12 col-md-6">
+        <div class="form__overlay col-12 col-md-6 px-2">
           <form action="" method="post" class="form">
             {% csrf_token %}
             <div class="form__group">

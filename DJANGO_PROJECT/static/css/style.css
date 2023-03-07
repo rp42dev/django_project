@@ -2082,7 +2082,6 @@ a:hover {
     flex-wrap: nowrap;
     flex-direction: row !important;
     gap: 2rem 2rem;
-
 }
 
 
@@ -2613,6 +2612,16 @@ a:hover {
     align-items: center;
 }
 
+.flex__horizontal-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex__vertical-center {
+    display: flex;
+    align-items: center;
+}
+
 .justify-column-center {
     display: flex;
     flex-direction: column;
@@ -3094,10 +3103,18 @@ body {
 .marquee__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
 }
 
 .marquee__text {
     display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.marquee__text div {
+    display: inline-block;
+    white-space: nowrap;
 }
 
 
