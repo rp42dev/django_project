@@ -3036,6 +3036,7 @@ a:hover {
 
 body {
     position: relative;
+    overflow: hidden;
 }
 
 .bg {
