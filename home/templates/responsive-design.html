@@ -3,24 +3,24 @@
 
 {% block meta %}
 <meta name="description"
-    content="Is your website mobile-friendly? If not, you could be missing out on a huge chunk of potential customers. 
-    Contact me today to learn how I can help you stay ahead of the game with responsive design and ensure that your website is easily accessible and readable on a range of devices." />
+    content="Don't miss out on mobile traffic! Contact me today to create a website
+    that attracts potential customers and increases your sales.">
 
-<meta name="title" content="Stay Ahead of the Game with Responsive Design - I'm Here to Help!">
+<meta name="title" content="Is your website mobile-friendly? - I'm Here to Help!">
 
-<meta property="og:title" content="Stay Ahead of the Game with Responsive Design - I'm Here to Help!">
+<meta property="og:title" content="Is your website mobile-friendly? - I'm Here to Help!">
 <meta property="og:description"
-    content="Is your website mobile-friendly? If not, you could be missing out on a huge chunk of potential customers. 
-Contact me today to learn how I can help you stay ahead of the game with responsive design and ensure that your website is easily accessible and readable on a range of devices.">
+    content="Don't miss out on mobile traffic! Contact me today to create a website
+    that attracts potential customers and increases your sales.">
 
-<meta property="twitter:title" content="Stay Ahead of the Game with Responsive Design - I'm Here to Help!">
+<meta property="twitter:title" content="Is your website mobile-friendly? n - I'm Here to Help!">
 <meta property="twitter:description"
-    content="Is your website mobile-friendly? If not, you could be missing out on a huge chunk of potential customers. 
-Contact me today to learn how I can help you stay ahead of the game with responsive design and ensure that your website is easily accessible and readable on a range of devices.">
+    content="Don't miss out on mobile traffic! Contact me today to create a website
+    that attracts potential customers and increases your sales.">
 
-<meta property="og:image" content="{% static 'img/devices33.png' %}">
+<meta property="og:image" content="{% static 'img/devices3.webp' %}">
 
-<meta property="og:url" content="https://www.rp42.com/">
+<meta property="og:url" content="https://www.rp42.cloud/responsive-design/">
 <meta property="og:site_name" content="RP 42">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_IE">
@@ -34,17 +34,15 @@ Contact me today to learn how I can help you stay ahead of the game with respons
 {% endblock %}
 
 {% block header %}
-<div class="spacer-6"></div>
+<div class="spacer"></div>
 <section id="hero">
     <article class="container split relative">
         <div class="p-2 p-lg-3 split__content">
             <h1 class="header-text gray responsive_headline">Responsive Web <span class="primary">Design</span></h1>
             <p class="large-text">
-                Where having a mobile-friendly website is as essential as
-                having a cup of coffee in the morning. With more than half of internet traffic coming from mobile
-                devices, it's no longer a question of whether or not you need a mobile-friendly website - it's a
-                must-have.</p>
-            <a href="#ensures" class="primary btn-outline large-text d-none d-md-block">Learn More <i
+                With more than half of internet traffic coming from mobile devices, 
+                it's no longer a question of whether or not you need a mobile-friendly website - it's a must-have.</p>
+            <a href="#benefits" class="primary btn-outline large-text d-none d-md-block">Learn More <i
                     class="fas fa-arrow-down ml-2"></i></a>
         </div>
         <div class="split__img">
@@ -55,8 +53,9 @@ Contact me today to learn how I can help you stay ahead of the game with respons
 {% endblock %}
 
 {% block content %}
-{% include 'partials/responsive-design/featured-what.html' %}
+{% include 'partials/responsive-design/featured-benefits.html' %}
 {% include 'partials/responsive-design/featured-think.html' %}
-{% include 'partials/featured/featured-focus.html' %}
+{% include 'partials/featured/featured-services.html' %}
+{% include 'partials/responsive-design/featured-how.html' %}
 {% include 'partials/featured/featured-contact.html' %}
 {% endblock %}

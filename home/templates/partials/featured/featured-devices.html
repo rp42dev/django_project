@@ -1,14 +1,17 @@
 {% load static %}
 <div id="think" class="spacer"></div>
-<div class="container row">
-  <div class="image__feature col-12 col-lg-6">
-    <img src="{% static 'img/devices3.webp' %}" alt="Hero Image">
-  </div>
-  <div class="px-2 px-lg-3 py-0 flex__column col-12 col-lg-6 justify-column-center">
-    <h2>Responsive <span class="primary">Design</span></h2>
-    <p class="light medium-text">
-      I believe that a website should be easy to use and navigate, no matter who you are or what
-      device you're using. That's why I focus on cross-device compatibility and responsive design.</p>
-    <a href="{% url 'responsive-design' %}" class="primary btn-outline large-text">Learn More <i class="fas fa-arrow-right"></i></a>
-  </div>
-</div>
+<section class="container">
+  <article class="row">
+    <figure class="image__feature col-12 col-lg-6">
+      <img src="{% static 'img/devices3.webp' %}" alt="Hero Image">
+    </figure>
+    <div class="px-2 px-lg-3 py-0 flex__column col-12 col-lg-6 justify-column-center">
+      <h2>Responsive <span class="primary">Design</span></h2>
+      <p class="light medium-text">
+        I believe that a website should be easy to use and navigate, no matter who you are or what
+        device you're using. That's why I focus on cross-device compatibility and responsive design.</p>
+      <a href="{% url 'responsive-design' %}" class="primary btn-outline large-text">Learn More <i
+          class="fas fa-arrow-right"></i></a>
+    </div>
+  </article>
+</section>
