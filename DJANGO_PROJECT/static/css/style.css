@@ -2964,7 +2964,7 @@ a:hover {
     left: 0;
     width: 100%;
     z-index: 999;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 }
 
 .nav__inner {
@@ -3047,7 +3047,7 @@ body {
     background: url(../img/bg.webp) center center/cover repeat;
     z-index: -1;
     opacity: 0.5;
-    filter: blur(5px);
+    filter: blur(4px);
 }
 
 /* Overlap by 20% hero content over hero img using grid */
@@ -3132,6 +3132,7 @@ body {
     background-color: var(--dark-color-09);
     color: var(--light-color);
     padding: 2rem 3rem;
+    max-width: 500px;
 }
 
 .header-text {

@@ -1,6 +1,6 @@
 $(window).scroll(function () {
     // Hide navbar on scroll down and show on scroll up
-    $(window).scrollTop() > 0 ? $('.nav').css('top', '-120px') : $('.nav').css('top', '0');
+    $(window).scrollTop() > 0 ? $('.nav').css('top', '-200px') : $('.nav').css('top', '0');
 
 });
 
@@ -46,8 +46,13 @@ $(window).on('load', function () {
             
     });
 
-
-
+    gsap.to(".bg", {
+        scrollTrigger: {
+            scrub: true
+        },
+        y: (i, target) => ScrollTrigger.maxScroll(window) * target.dataset.speed,
+        ease: "none"
+    });
 
     const zoomElems = document.querySelectorAll('.zoom');
 

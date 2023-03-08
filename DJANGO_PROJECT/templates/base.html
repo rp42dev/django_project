@@ -50,8 +50,8 @@
         {% for message in messages %}
         <div class="message-container">
             <div class="message">
-                
-                <p class="large-text">{{ message }}</p>
+
+                <p class="medium-text">{{ message }}</p>
             </div>
         </div>
         {% endfor %}
@@ -65,7 +65,7 @@
         {% endblock %}
     </div>
 
-    <div class="bg"></div>
+    <div class="bg" data-speed=".4"></div>
 
     {% block footer %}
     {% endblock %}
