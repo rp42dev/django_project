@@ -9,9 +9,8 @@ $(window).on('load', function () {
     if ($('.message').length) {
         setTimeout(function () {
             $('.message').hide(200);
-        }, 3000);
+        }, 5000);
     }
-    jQuery(".responsive_headline").fitText(1.2, { minFontSize: '43px', maxFontSize: '50px' });
 });
 
 $(window).on('load', function () {

@@ -18,17 +18,28 @@ def contact(request):
         message = request.POST['message']
         
         message_body = f'Name: {name}\nEmail: {email}\nMessage: {message}'
+        
+        message_reply = f'Hi {name},\n\nThank you for contacting us. We will get back to you as soon as possible.\n\nRegards,\n\nThe From Lads to Dads Team'
 
         try:
             send_mail(
-                f"New contact form submission from {name}", # subject
-                message_body, # message
-                email, # from email
-                [settings.DEFAULT_FROM_EMAIL], # to email
+                f"New contact form submission from {name}",  # subject
+                message_body,  # message
+                email,  # from email
+                [settings.DEFAULT_FROM_EMAIL],  # to email
                 fail_silently=False,
             )
+            
+            send_mail(
+                f"Thank you for contacting us {name}",  # subject
+                message_reply,  # message
+                settings.DEFAULT_FROM_EMAIL,  # from email
+                [email],  # to email
+                fail_silently=False,
+            )
+            
             messages.success(request, 'Your message has been sent!')
-            return redirect('contact')
+            return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
         
