@@ -38,7 +38,7 @@ def contact(request):
                 fail_silently=False,
             )
             
-            messages.success(request, f"Thank you for contacting us {name}. We will get back to you as soon as possible."
+            messages.success(request, f"Thank you for contacting us {name}. We will get back to you as soon as possible.")
             return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
