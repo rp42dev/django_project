@@ -19,7 +19,7 @@ def contact(request):
         
         message_body = f'Name: {name}\nEmail: {email}\nMessage: {message}'
         
-        message_reply = f'Hi {name},\n\nThank you for contacting us. We will get back to you as soon as possible.\n\nRegards,\n\nThe From Lads to Dads Team'
+        message_reply = f'Hi {name},\n\nThank you for contacting us. We will get back to you as soon as possible.\n\nRegards,\n\nRaivis'
 
         try:
             send_mail(
