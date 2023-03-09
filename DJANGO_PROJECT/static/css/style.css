@@ -3103,7 +3103,7 @@ body {
     opacity: 0.9;
 }
 
-/* ========Feature========= */
+/* ========Featured========= */
 .text__container {
     position: relative;
 }
@@ -3126,23 +3126,6 @@ body {
     transform-origin: center;
 }
 
-.message-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    place-items: center;
-    z-index: 100;
-}
-
-.message {
-    background-color: var(--dark-color-09);
-    color: var(--light-color);
-    padding: 2rem 3rem;
-    max-width: 500px;
-}
 
 .header-text {
     font-size: 2.5rem;
@@ -3168,6 +3151,29 @@ body {
     margin: auto;
 }
 
+/* ========Error Messages========= */
+
+.message-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    z-index: 100;
+}
+
+.message {
+    background-color: var(--dark-color-09);
+    color: var(--light-color);
+    padding: 2rem 3rem;
+    max-width: 500px;
+}
+
+
+
+/* ========Marquee========= */
 .marquee__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
