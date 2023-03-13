@@ -21,7 +21,7 @@ $(window).on('load', function () {
 
         let text = el.innerHTML;
         let textWidth = el.scrollWidth;
-        el.innerHTML = text + text;
+        el.innerHTML = text + text + text + text;
         let textSpeed = el.getAttribute('data-speed');
 
         let textDirection = el.getAttribute('data-direction');
