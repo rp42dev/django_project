@@ -2681,7 +2681,7 @@ a:hover {
 }
 
 .grid-center {
-    display: grid;
+    display: grid !important;
     place-items: center;
 }
 
