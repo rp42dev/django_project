@@ -56,4 +56,12 @@ def responsive_deign(request):
 def fromladstodads(request):
     return render(request, 'fromladstodads.html')
 
+
+#Services
+def web_development(request):
+    return render(request, 'services/web-development.html')
+
+
+def web_transform(request):
+    return render(request, 'services/web-transform.html')
              

@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta name="description"
+    content=" Looking for a website designer who can create a custom mobile-friendly website for you? 
+    Look no further. With years of experience in website design and development, 
+    I can help you build a stunning website that will be both beautiful and functional.">
+<meta name="title" content="I Will Create a Custom Mobile-Friendly Website for You">
+
+<meta property="og:title" content="I Will Create a Custom Mobile-Friendly Website for You">
+<meta property="og:description" content="Looking for a website designer who can create a custom mobile-friendly website for you? 
+    Look no further. With years of experience in website design and development, 
+    I can help you build a stunning website that will be both beautiful and functional.">
+
+<meta property="twitter:title" content="I Will Create a Custom Mobile-Friendly Website for You">
+<meta property="twitter:description" content="Looking for a website designer who can create a custom mobile-friendly website for you? 
+    Look no further. With years of experience in website design and development, 
+    I can help you build a stunning website that will be both beautiful and functional.">
+
+<meta property="og:image" content="{% static 'img/devices3.webp' %}">
+
+<meta property="og:url" content="https://www.rp42.cloud/web-development/">
+<meta property="og:site_name" content="RP 42">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IE">
+<meta property="og:locale:alternate" content="en_US">
+{% endblock %}
+
+{% block title %}
+RP 42
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block header %}
+<div class="spacer"></div>
+<section id="hero">
+    <article class="container split">
+        <div class="p-2 p-lg-3 split__content">
+            <h1 class="left header-text display-1 gray responsive_headline">Custom mobile-friendly <span
+                    class="primary">websites</span></h1>
+            </h1>
+            <p class="large-text right">
+                I specialize in creating custom websites that are optimized for mobile devices and provide a seamless user
+               experience to your visitors.
+            <div class="row">
+                <a href="{% url 'contact' %}" class="primary btn medium-text">Get in Touch &nbsp;<i
+                        class="fas fa-envelope ml-2"></i></a>
+                <a href="#benefits" class="primary btn-outline medium-text d-none d-xl-block">Learn More
+                    &nbsp;<i class="fas fa-arrow-down ml-2"></i></a>
+            </div>
+        </div>
+        <div class="split__img fade-right ">
+            <img id="my-plane" src="{% static 'img/devices3.webp' %}" alt="Hero Image">
+        </div>
+    </article>
+</section>
+{% endblock %}
+
+{% block content %}
+{% include 'partials/services/featured-benefits.html' %}
+{% include 'partials/featured/featured-how.html' %}
+{% include 'partials/featured/featured-contact.html' %}
+<div class="spacer"></div>
+{% endblock %}

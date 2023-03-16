@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta name="description"
+    content="Are you struggling with a website that doesn't perform well on mobile devices? Look no further! I will transform your website into a mobile-friendly website that will attract and engage your mobile audience.">
+<meta name="title" content="I Will Transform Your Website into a Mobile-Friendly Website">
+
+<meta property="og:title" content="I Will Transform Your Website into a Mobile-Friendly Website">
+<meta property="og:description"
+    content="Are you struggling with a website that doesn't perform well on mobile devices? Look no further! I will transform your website into a mobile-friendly website that will attract and engage your mobile audience.">
+
+<meta property="twitter:title" content="I Will Transform Your Website into a Mobile-Friendly Website">
+<meta property="twitter:description"
+    content="Are you struggling with a website that doesn't perform well on mobile devices? Look no further! I will transform your website into a mobile-friendly website that will attract and engage your mobile audience.">
+
+<meta property="og:image" content="{% static 'img/devices33.png' %}">
+
+<meta property="og:url" content="https://www.rp42.cloud/web-transform">
+<meta property="og:site_name" content="RP 42">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IE">
+<meta property="og:locale:alternate" content="en_US">
+{% endblock %}
+
+{% block title %}
+RP 42 - I Will Transform Your Website into a Mobile-Friendly Website
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block header %}
+<div class="spacer"></div>
+<section id="hero">
+    <article class="container split">
+        <div class="p-2 p-lg-3 split__content">
+            <h1 class="left header-text display-1 gray responsive_headline">I Will Transform Your Website into a
+                Mobile-Friendly
+                 <span class="primary">Website.</span></h1>
+            <p class="large-text right">
+                 If your website is not optimized for mobile devices, you could be losing potential customers. That's
+                 where I come in! I will transform your website into a mobile-friendly website.
+                <div class="row">
+                    <a href="{% url 'contact' %}" class="primary btn medium-text">Get in Touch &nbsp;<i
+                            class="fas fa-envelope ml-2"></i></a>
+                    <a href="#benefits" class="primary btn-outline medium-text d-none d-xl-block">Learn More
+                        &nbsp;<i class="fas fa-arrow-down ml-2"></i></a>
+                </div>
+        </div>
+        <div class="split__img fade-right ">
+            <img id="my-plane" src="{% static 'img/hero.webp' %}" alt="Hero Image">
+        </div>
+    </article>
+</section>
+{% endblock %}
+{% block content %}
+{% include 'partials/responsive-design/featured-benefits.html' %}
+{% include 'partials/services/featured-how.html' %}
+{% include 'partials/featured/featured-contact.html' %}
+{% endblock %}
