@@ -9,5 +9,5 @@ urlpatterns = [
     path('responsive-design/', views.responsive_deign, name='responsive-design'),
     path('fromladstodads/', views.fromladstodads, name='from-lads-to-dads'),
     path('custom-development/', views.web_development, name='custom-development'),
-    path('web-transform/', views.web_transform, name='web-transform')
+    path('refresh/', views.web_transform, name='web-transform')
 ]
