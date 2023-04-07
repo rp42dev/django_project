@@ -3238,9 +3238,14 @@ body {
     .large-text {
         font-size: 1.6rem;
     }
+
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        text-align: center !important;
+    }
+
     .testimonials .testimonial__item li {
         font-size: 60% !important;
     }
