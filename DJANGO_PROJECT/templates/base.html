@@ -30,8 +30,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 
     <script defer src="{% static 'js/fit-text.js' %}"></script>
-    <script defer src="{% static 'js/curtains.umd.min.js' %}"></script>
-    
+
 
     {% block js %}
     {% endblock %}
@@ -57,20 +56,16 @@
         {% endfor %}
         {% endif %}
     </header>
-    
-    
-    
+
     <div class="x-hidden">
         {% block content %}
         {% endblock %}
     </div>
 
-    <div class="bg" data-speed=".4"></div>
-
     {% block footer %}
     {% endblock %}
     {% include 'partials/footer.html' %}
-    
+
     {% block postload_js %}
     {% endblock %}
     <script src="{% static 'js/script.js' %}"></script>
