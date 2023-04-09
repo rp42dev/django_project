@@ -535,6 +535,11 @@ a:hover {
     margin-right: auto;
 }
 
+.mx-0 {
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
 .mx-1 {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -769,6 +774,11 @@ a:hover {
     .mx-sm-auto {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .mx-sm-0 {
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 
     .mx-sm-1 {
@@ -1047,6 +1057,11 @@ a:hover {
     .mx-md-auto {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .mx-md-0 {
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 
     .mx-md-1 {
@@ -3242,9 +3257,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        text-align: center !important;
-    }
+   
 
     .testimonials .testimonial__item li {
         font-size: 60% !important;
