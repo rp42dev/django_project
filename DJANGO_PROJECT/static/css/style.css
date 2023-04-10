@@ -3236,6 +3236,14 @@ body {
     height: 100px;
 }
 
+.tech .flex__column {
+    transition: all 0.3s ease-in-out;
+}
+
+.tech .flex__column:hover {
+    box-shadow: 0 0 12px 3px var(--primary-color-09);
+}
+
 /* =========Media Queries========= */
 @media screen and (max-width: 960px) {
     .large-text {
