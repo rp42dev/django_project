@@ -3244,6 +3244,17 @@ body {
     box-shadow: 0 0 12px 3px var(--primary-color-09);
 }
 
+#think img
+#specialize img {
+    transition: all 0.3s ease-in-out;
+}
+
+#think img:hover,
+#specialize img:hover {
+    -webkit-filter: drop-shadow(0px 0px 6px var(--primary-color-09));
+    filter: drop-shadow(0px 0px 6px var(--primary-color-09));
+}
+
 /* =========Media Queries========= */
 @media screen and (max-width: 960px) {
     .large-text {
