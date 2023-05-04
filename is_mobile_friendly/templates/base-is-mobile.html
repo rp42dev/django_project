@@ -1,4 +1,5 @@
 {% load static %}
+{% load static tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,24 +13,18 @@
 
     <title>
         {% block title %}
-        rp42
+        Is Mobile Friendly
         {% endblock %}
     </title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    {% tailwind_css %}
+    <link href="{% static 'css/is_mobile_friendly/style.css' %}" rel="stylesheet" />
 
     {% block css %}
     {% endblock %}
-
-    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
-        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-
-    <script defer src="{% static 'js/fit-text.js' %}"></script>
 
 
     {% block js %}
@@ -39,7 +34,7 @@
 
 <body id="top">
     {% block nav %}
-    {% include 'partials/nav.html' %}
+
     {% endblock %}
 
     <header>
@@ -56,18 +51,17 @@
         {% endif %}
     </header>
 
-    <div class="x-hidden">
+    <div class="">
         {% block content %}
         {% endblock %}
     </div>
 
     {% block footer %}
     {% endblock %}
-    {% include 'partials/footer.html' %}
+
 
     {% block postload_js %}
     {% endblock %}
-    <script src="{% static 'js/script.js' %}"></script>
 
 </body>
 
