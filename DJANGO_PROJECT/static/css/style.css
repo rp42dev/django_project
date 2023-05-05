@@ -47,6 +47,10 @@ html {
     overflow: hidden;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 /* Font sizes base 32px scale 1.333 */
 /* Sizing and spacing always in multiples of 8px */
 h1,
@@ -632,6 +636,10 @@ a:hover {
 .px-1 {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.pt-1 {
+    padding-top: 1rem;
 }
 
 .py-1 {

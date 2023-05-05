@@ -5,47 +5,64 @@
   <div class="container">
     <div class="flex__column px-0 px-md-1">
       <h2 class="light text-center text-sm-left">My <span class="primary">Services</span></h2>
-    
-    <div class="row tech flex__center stretch">
 
-      <div class="px-0 px-md-1 col-12 col-md-6 col-lg-4 stretch">
-        <div class="flex__column gap-1 px-2 py-3 bg-gray9 ">
-          <div class="row2 gap-1 icon-sm">
-            <img src="{% static 'icons/design-nib.svg' %}" alt="Pen tool">
-            <h6 class="text-white my-auto">Web <span class="primary">Development</span></h6>
-          </div>
-          <p class="text-white"> A unique, mobile-friendly, user-friendly and tailored website that reflects your brand's 
-            values, and goals. <a href={% url "custom-development" %} target="_blank" class="primary">Read More <i
-                class="fas fa-external-link-alt"></i></a></p> 
-          </p>
+      <div class="row tech flex__center stretch">
+
+        <div class="px-0 px-md-1 col-12 col-md-6 col-lg-4 stretch">
+          <a href={% url "custom-development" %}>
+            <div class="flex__column gap-1 px-2 py-3 bg-gray9 ">
+              <div class="row2 gap-1 icon-sm">
+                <img src="{% static 'icons/design-nib.svg' %}" alt="Pen tool">
+                <h6 class="text-white my-auto">Web <span class="primary">Development</span></h6>
+              </div>
+              <div>
+                <div class="spacer-1"></div>
+                <p class="text-white"> 
+                  A unique, mobile-friendly, user-friendly and tailored website 
+                  that reflects your brand's values, and goals.</p>
+              </div>
+              <div>
+                <a href={% url "custom-development" %} class="primary">Read More <i
+                    class="fas fa-external-link-alt"></i></a>
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
 
-      <div class="px-0 px-md-1 col-12 col-md-6 col-lg-4 stretch">
-        <div class="flex__column gap-1 px-2 py-3 bg-gray9 ">
-          <div class="row2 gap-1 icon-sm">
-            <img src="{% static 'icons\agile.svg' %}" alt="edit">
-            <h6 class="text-white my-auto">Web <span class="primary">Refactoring</span></h6>
-          </div>
-          <p class="text-white">Converting a website to be mobile-friendly and accessible on different screen
-            sizes and devices for optimal user experience. <a href={% url "web-transform" %} target="_blank"
-              class="primary">Read More <i class="fas fa-external-link-alt"></i></a></p>
-          </p>
+        <div class="px-0 px-md-1 col-12 col-md-6 col-lg-4 pointer stretch ">
+          <a href={% url "web-transform" %} class="text-decoration-none">
+            <div class="flex__column gap-1 px-2 py-3 bg-gray9 ">
+              <div class="row2 gap-1 icon-sm">
+                <img src="{% static 'icons\agile.svg' %}" alt="edit">
+                <h6 class="text-white my-auto">Web <span class="primary">Refactoring</span></h6>
+              </div>
+              <div>
+                <div class="spacer-1"></div>
+                <p class="text-white pt-1">Converting a website to be mobile-friendly and accessible on different screen
+                  sizes and devices.
+                </p>
+              </div>
+              <div>
+                <a href={% url "web-transform" %} class="primary">Read
+                  More <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
 
-      <div class="px-0 px-md-1 col-12 col-md-6 col-lg-4 stretch">
-        <div class="flex__column gap-1 px-2 py-3 bg-gray9 ">
-          <div class="row2 gap-1 icon-sm">
-            <img src="{% static 'icons\tools.svg' %}" alt="Settings">
-            <h6 class="text-white my-auto">Web <span class="primary">Maintenance</span></h6>
+        <div class="px-0 px-md-1 col-12 col-md-6 col-lg-4 stretch">
+          <div class="flex__column gap-1 px-2 py-3 bg-gray9 ">
+            <div class="row2 gap-1 icon-sm">
+              <img src="{% static 'icons\tools.svg' %}" alt="Settings">
+              <h6 class="text-white my-auto">Web <span class="primary">Maintenance</span></h6>
+            </div>
+            <p class="text-white">Regular updates, security measures, and technical support to keep your online presence
+              functioning smoothly.</p>
           </div>
-          <p class="text-white">Regular updates, security measures, and technical support to keep your online presence
-            functioning smoothly.</p>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
   </div>
 </section>
