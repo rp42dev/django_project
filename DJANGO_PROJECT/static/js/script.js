@@ -15,6 +15,13 @@ $(window).on('load', function () {
 
 $(window).on('load', function () {
 
+    document.querySelectorAll('.onclick').forEach((elem) => {
+        elem.addEventListener('click', () => {
+            elem.querySelector('a').click();
+            return true;
+        });
+    });
+
     let marquee = document.querySelectorAll('.marquee__text');
 
     marquee.forEach(el => {
