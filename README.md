@@ -1,5 +1,5 @@
 
-## [rp42.cloud](https://rp42.cloud)
+
 
 ## rp42.cloud - web app development and hosting services powered by Django
 
